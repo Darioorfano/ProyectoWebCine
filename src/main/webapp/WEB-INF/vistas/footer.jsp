@@ -1,0 +1,33 @@
+<footer>
+       <section class="contenedor-footer">
+   
+        <section class="derechos">
+            <p><i class="far fa-copyright"></i>Todos los derechos reservados</p>
+        </section>
+      <section class="seccion-menu-inf">
+        <nav class="nav-inferior">
+            <ul>
+                <li><a href="peliculas">Peliculas</a></li>
+                <li><a href="recomendaciones">Recomendaciones</a></li>
+                <li><a href="promociones">Promociones</a></li>
+                <li><a href="cuenta">Mi cuenta</a></li>
+            </ul>
+        </nav>
+      </section>
+      <section class="redes-sociales-inferior">
+        
+        <i class="fab fa-instagram"><a href="https://www.instagram.com/ "></a></i>
+        <i class="fab fa-facebook-f"><a href="https://www.facebook.com/"></a></i>
+        <i class="fab fa-whatsapp"><a href="https://www.whatsapp.com/?lang=es"></a></i>
+
+      </section>
+       </section>
+        
+     
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
