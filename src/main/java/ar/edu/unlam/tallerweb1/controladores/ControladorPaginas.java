@@ -9,6 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ControladorPaginas {
 	
 	
+<<<<<<< HEAD
 	@RequestMapping ("/inicio")
 	public ModelAndView home() {
 		ModelMap modelo = new ModelMap();
@@ -38,6 +39,33 @@ public class ControladorPaginas {
 		modelo.put("titulo","Recuperar Cuenta");
 		return new ModelAndView("contraseñaOlvidada",modelo);
 	}
+=======
+@RequestMapping ("/inicio")
+public ModelAndView home() {
+
+return new ModelAndView("index");
+}
+@RequestMapping("/login")
+public ModelAndView login() {
+	ModelMap modelo=new ModelMap();
+	return new ModelAndView("login",modelo);
+	
+}
+
+@RequestMapping("/registro")
+public ModelAndView registro() {
+	ModelMap modelo=new ModelMap();
+	return new ModelAndView("registro",modelo);
+	
+}
+
+
+@RequestMapping ("/recuperaTuCuenta")
+public ModelAndView recuperarCuenta() {
+	ModelMap modelo=new ModelMap();
+	return new ModelAndView("contraseñaOlvidada",modelo);
+}
+>>>>>>> fb9c96a8e903698ee8645e30efbf7f470089db8c
 
 
 

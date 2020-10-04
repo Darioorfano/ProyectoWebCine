@@ -29,7 +29,7 @@
                
                 <button class="btn btn-lg  btn-block text-uppercase mt-4 boton-logueo ancla-botones-de-login " type="submit">Registrarse
                 	</button>
-                  <p class="text-center pt-4"><a href="contraseñaOlvidada.html">¿Olvidaste tu contraseña?</p></a>
+                  
                   <button class="btn btn-lg btn-google mt-4 btn-danger btn-block text-uppercase" type="submit"><i
                     class="fab fa-google mr-2"></i><a class="ancla-botones-de-login" href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"> Continuar con Google</a> </button>
                 <button class="btn btn-lg btn-primary text-light mt-4 btn-facebook btn-block  text-uppercase" type="submit"><i
