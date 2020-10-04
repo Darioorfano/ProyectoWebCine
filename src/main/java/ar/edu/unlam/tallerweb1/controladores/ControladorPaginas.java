@@ -39,8 +39,4 @@ public class ControladorPaginas {
 		return new ModelAndView("contraseñaOlvidada",modelo);
 	}
 
-
-
-
-
 }

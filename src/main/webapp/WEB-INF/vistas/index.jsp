@@ -34,27 +34,12 @@
 
       
       <div class="contenedor-titulo-cartelera">
-<<<<<<< HEAD
-      <h2>PELICULAS</h2>
-    </div>
-    <section class="cartelera">
-    
-  
-       
-          <article>
-            <img src="img/fueradecontrol.jpg" alt="">
-            <p class="titulo-de-peliculas-estreno ">Fuera de control</p>
-          </article>
-  
-  
-=======
+
         <h2 >PELICULAS</h2>
       </div>
       <section class="cartelera d-flex flex-wrap ">
->>>>>>> fb9c96a8e903698ee8645e30efbf7f470089db8c
-      
-    
          
+      
             <article>
               <div class="container d-flex justify-content-center">
                 <img src="img/fueradecontrol.jpg" alt="">
