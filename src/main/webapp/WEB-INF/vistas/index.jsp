@@ -31,7 +31,7 @@
       <div class="contenedor-titulo-cartelera">
       <h2>PELICULAS</h2>
     </div>
-    <section class="cartelera ">
+    <section class="cartelera">
     
   
        

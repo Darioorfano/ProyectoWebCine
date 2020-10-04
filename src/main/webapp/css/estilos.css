@@ -7,6 +7,11 @@
     list-style: none;
     font-family: 'DM Sans', sans-serif;
 }
+
+body{
+	width: 100%;
+}
+
 /*Estilos index*/
 header{
 display: flex;
@@ -15,6 +20,7 @@ justify-content: space-between;
 padding:4em 0  0;
 background-color: black;
 }
+
 
 
 article{
