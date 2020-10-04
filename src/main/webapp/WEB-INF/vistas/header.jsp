@@ -44,5 +44,22 @@
                 </ul>
             </nav>
       
+       <div id="boton-responsive" >
+        <button id="button-responsive" class="bg-dark"><i class="fas fa-bars"></i></button>
+        
+          
+        </div>
+
+        <nav id="navegacion-responsive" class="navegacion">
+          <ul>
+            <li><a href="">Peliculas</a></li>
+            <li><a href="">Recomendaciones</a></li>
+            <li><a href="">Promociones</a></li>
+            <li><a href="">Mi cuenta</a></li>
+          </ul>
+        </nav>
+      
+      
+      
     </header>
 

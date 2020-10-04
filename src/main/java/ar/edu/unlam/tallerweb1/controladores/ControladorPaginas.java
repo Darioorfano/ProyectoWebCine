@@ -1,6 +1,7 @@
 package ar.edu.unlam.tallerweb1.controladores;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -15,23 +16,23 @@ return new ModelAndView("index");
 }
 @RequestMapping("/login")
 public ModelAndView login() {
-	
-	return new ModelAndView("login");
+	ModelMap modelo=new ModelMap();
+	return new ModelAndView("login",modelo);
 	
 }
 
 @RequestMapping("/registro")
 public ModelAndView registro() {
-	
-	return new ModelAndView("registro");
+	ModelMap modelo=new ModelMap();
+	return new ModelAndView("registro",modelo);
 	
 }
 
 
 @RequestMapping ("/recuperaTuCuenta")
 public ModelAndView recuperarCuenta() {
-	
-	return new ModelAndView("contraseñaOlvidada");
+	ModelMap modelo=new ModelMap();
+	return new ModelAndView("contraseñaOlvidada",modelo);
 }
 
 
