@@ -1,6 +1,7 @@
 package ar.edu.unlam.tallerweb1.controladores;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -8,32 +9,34 @@ import org.springframework.web.servlet.ModelAndView;
 public class ControladorPaginas {
 	
 	
-@RequestMapping ("/inicio")
-public ModelAndView home() {
+	@RequestMapping ("/inicio")
+	public ModelAndView home() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo","Inicio");
+		return new ModelAndView("index",modelo);
+	}
 
-return new ModelAndView("index");
-}
-@RequestMapping("/login")
-public ModelAndView login() {
+	@RequestMapping("/login")
+	public ModelAndView login() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo","Login");
+		return new ModelAndView("login",modelo);
 	
-	return new ModelAndView("login");
-	
-}
+	}
 
-@RequestMapping("/registro")
-public ModelAndView registro() {
-	
-	return new ModelAndView("registro");
-	
-}
+	@RequestMapping("/registro")
+	public ModelAndView registro() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo","Registro");
+		return new ModelAndView("registro",modelo);
+	}
 
 
-@RequestMapping ("/recuperaTuCuenta")
-public ModelAndView recuperarCuenta() {
-	
-	return new ModelAndView("contraseñaOlvidada");
-}
-
-
+	@RequestMapping ("/recuperaTuCuenta")
+	public ModelAndView recuperarCuenta() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo","Recuperar Cuenta");
+		return new ModelAndView("contraseñaOlvidada",modelo);
+	}
 
 }
