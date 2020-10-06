@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/estilos.css">
-    
+    <title>${titulo}</title>
 
 
 </head>
@@ -39,10 +39,27 @@
                 <ul>
                 <li><a href="">Peliculas</a></li>
                 <li><a href="">Recomendaciones</a></li>
-                <li><a href="">Promociones</a></li>
+                <li><a href="promociones">Promociones</a></li>
                 <li><a href="">Mi cuenta</a></li>   
                 </ul>
             </nav>
+      
+       <div id="boton-responsive" >
+        <button id="button-responsive" class="bg-dark"><i class="fas fa-bars"></i></button>
+        
+          
+        </div>
+
+        <nav id="navegacion-responsive" class="navegacion">
+          <ul>
+            <li><a href="">Peliculas</a></li>
+            <li><a href="">Recomendaciones</a></li>
+            <li><a href="">Promociones</a></li>
+            <li><a href="">Mi cuenta</a></li>
+          </ul>
+        </nav>
+      
+      
       
     </header>
 

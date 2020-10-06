@@ -7,4 +7,5 @@ public interface RepositorioUsuario {
 	void registrarUsuario(Usuario usuario);
 	Usuario consultarDisponibilidadDeUsuario(Usuario usuario);
 
+
 }

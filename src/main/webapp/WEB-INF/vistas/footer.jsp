@@ -16,9 +16,9 @@
       </section>
       <section class="redes-sociales-inferior">
         
-        <i class="fab fa-instagram"><a href="https://www.instagram.com/ "></a></i>
-        <i class="fab fa-facebook-f"><a href="https://www.facebook.com/"></a></i>
-        <i class="fab fa-whatsapp"><a href="https://www.whatsapp.com/?lang=es"></a></i>
+        <a href="https://www.instagram.com/ "><i class="fab fa-instagram"></i></a>
+       <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.whatsapp.com/?lang=es"><i class="fab fa-whatsapp"></i></a>
 
       </section>
        </section>
