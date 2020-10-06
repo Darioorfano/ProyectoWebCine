@@ -204,6 +204,11 @@ footer {
   color: white;
 }
 
+ /* Estilos para la pagina de promociones */
+ .tarjeta{
+ 	height: 50rem;
+ }
+
 @media screen and (max-width: 47em) {
   
   .col-logo {
