@@ -16,37 +16,36 @@ public class ControladorPaginas {
 	private ServicioLogin servicioLogin;
 	
 	
-@RequestMapping ("/inicio")
-public ModelAndView home() {
 
-return new ModelAndView("index");
-}
+	@RequestMapping ("/inicio")
+	public ModelAndView home() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo","Inicio");
+		return new ModelAndView("index",modelo);
+	}
 
-@RequestMapping("/login")
-public ModelAndView login() {
+	@RequestMapping("/login")
+	public ModelAndView login() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo","Login");
+		return new ModelAndView("login",modelo);
 
-	ModelMap modelo=new ModelMap();
-	return new ModelAndView("login",modelo);
-
-}
-
-
-
-
-@RequestMapping("/registro")
-public ModelAndView registro() {
-	ModelMap modelo=new ModelMap();
-	return new ModelAndView("registro",modelo);
 	
-}
+	}
+
+	@RequestMapping("/registro")
+	public ModelAndView registro() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo","Registro");
+		return new ModelAndView("registro",modelo);
+	}
 
 
-@RequestMapping ("/recuperaTuCuenta")
-public ModelAndView recuperarCuenta() {
-	ModelMap modelo=new ModelMap();
-	return new ModelAndView("contraseñaOlvidada",modelo);
-}
-
-
+	@RequestMapping ("/recuperaTuCuenta")
+	public ModelAndView recuperarCuenta() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo","Recuperar Cuenta");
+		return new ModelAndView("contraseñaOlvidada",modelo);
+	}
 
 }

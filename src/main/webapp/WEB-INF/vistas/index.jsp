@@ -34,12 +34,12 @@
 
       
       <div class="contenedor-titulo-cartelera">
+
         <h2 >PELICULAS</h2>
       </div>
       <section class="cartelera d-flex flex-wrap ">
-      
-    
          
+      
             <article>
               <div class="container d-flex justify-content-center">
                 <img src="img/fueradecontrol.jpg" alt="">
