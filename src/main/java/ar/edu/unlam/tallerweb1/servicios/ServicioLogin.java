@@ -1,11 +1,10 @@
-package ar.edu.unlam.tallerweb1.repositorios;
+package ar.edu.unlam.tallerweb1.servicios;
 
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 
-public interface RepositorioUsuario {
-
+public interface ServicioLogin {
+	
+	
 	void registrarUsuario(Usuario usuario);
 	Usuario consultarDisponibilidadDeUsuario(Usuario usuario);
-
-
 }
