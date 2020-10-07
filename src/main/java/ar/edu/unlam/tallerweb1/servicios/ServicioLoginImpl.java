@@ -23,9 +23,11 @@ private RepositorioUsuario servicioLogin;
 	}
 
 	@Override
-	public Usuario consultarDisponibilidadDeUsuario(Usuario usuario) {
+	public Usuario consultarUsuario(Long id) {
 		// TODO Auto-generated method stub
-		return servicioLogin.consultarDisponibilidadDeUsuario(usuario);
+		return servicioLogin.consultarUsuario(id);
 	}
+
+
 
 }
