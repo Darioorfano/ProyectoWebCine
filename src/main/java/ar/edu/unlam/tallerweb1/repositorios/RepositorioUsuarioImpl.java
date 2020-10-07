@@ -19,13 +19,16 @@ public class RepositorioUsuarioImpl implements RepositorioUsuario {
 	@Override
 	public void registrarUsuario(Usuario usuario) {
 		sessionFactory.getCurrentSession().save(usuario);
-
+		
 	}
+
 
 	@Override
-	public Usuario consultarDisponibilidadDeUsuario(Usuario usuario) {
+	public Usuario consultarUsuario(Long id) {
 		// TODO Auto-generated method stub
-		return null;
+		return sessionFactory.getCurrentSession().get(Usuario.class, id);
 	}
 
+	
+	
 }

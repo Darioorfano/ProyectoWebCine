@@ -11,10 +11,18 @@
               <form class="form-signin">
                 
                 <div class="form-label-group pb-3">
-                    <input type="text" id="nombreCompleto " class="form-control " placeholder="Nombre Completo" required
+                    <input type="text" id="nombreCompleto " class="form-control " placeholder="Nombre" required
                       autofocus>
   
                   </div>
+                  
+                  <div class="form-label-group pb-3">
+                    <input type="text" id="apellido " class="form-control " placeholder="Apellido" required
+                      autofocus>
+  
+                  </div>
+                  
+                  
                 <div class="form-label-group pb-3">
                   <input type="email" id="inputEmail " class="form-control " placeholder="Correo Electronico" required
                     autofocus>

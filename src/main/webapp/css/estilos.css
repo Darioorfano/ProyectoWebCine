@@ -285,11 +285,6 @@ footer {
   }
 
 
-  .foto {
-    height: 40vh;
-    width: 100vw;
-  }
-
   .contenedor-titulo-cartelera{
 display: flex;
 padding-bottom: 2em;
@@ -322,6 +317,15 @@ margin: auto;
   .redes-sociales-inferior {
     margin: auto;
   }
+
+/*
+  .foto {
+    height: 40vh;
+    width: 100vw;
+  }
+*/
+
+
 }
 /*Hacer cuando pueda un @media de 36 em  para que los iconos
 del header queden bien posicionados*/
@@ -346,5 +350,9 @@ del header queden bien posicionados*/
   border:none;
   
 }
+.slider-foto-estreno{
+	display:none;
+}
+
 
 }

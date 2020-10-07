@@ -13,8 +13,10 @@
                 <img src="img/banner-annabelle3.jpg"class="d-block w-100" alt="...">
               </div>
                <div class="carousel-item">
-              <img src="img/banner-harrypotter.jpg" class="d-block w-100 foto" alt="...">
+              <img src="img/banner-harrypotter.jpg" class="d-block w-100 " alt="...">
+            <!-- agregarle solo foto en la ultima imagen -->
             </div>
+            
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
