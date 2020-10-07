@@ -10,8 +10,8 @@
       <h2 class="text-center text-light">Promociones</h2>
       
       <!--Seccion Tarjeta de Creditos-->
-      <section class="container-fluid">
-        <div id="carouselExampleCaptions" class="carousel slide ">
+      <section class="container-fluid" style="width: 500px;height: 400px; margin-bottom: 30px;margin-top: 40px">
+        <div id="carouselExampleCaptions" class="carousel slide" style="width: 500px;height: 400px;">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -21,44 +21,43 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
           </ol>
           <div class="carousel-inner">
-            
             <div class="carousel-item active" data-interval="10000">
-              <img src="img/TarjetaVisa.jpeg" alt="Tarjeta Visa" class="d-block img-lg w-100 tarjeta" width="800" height="400">
+              <a href="#"><img src="img/TarjetaVisa.jpeg" alt="Tarjeta Visa" class="d-block img-lg w-100" width="500" height="400"></a>
               <div class="carousel-caption d-none d-md-block">
                 <a href="#" class="btn btn-primary btn-lg">Ver Promociones</a>
               </div>
             </div>
 
             <div class="carousel-item" data-interval="10000">
-              <img src="img/TarjetaNaranja.jpeg" alt="Tarjeta Naranja" class="d-block w-100 img-lg tarjeta" width="800" height="400">
+              <a href="#"><img src="img/TarjetaNaranja.jpeg" alt="Tarjeta Naranja" class="d-block w-100 img-lg" width="500" height="400"></a>
               <div class="carousel-caption d-none d-md-block">
                 <a href="#" class="btn btn-primary btn-lg">Ver Promociones</a>
               </div>
             </div>
 
             <div class="carousel-item" data-interval="10000">
-              <img src="img/TarjetaMastercard.jpeg" alt="Tarjeta Mastercard" class="d-block w-100 img-lg tarjeta" width="800" height="400">
+              <a href="#"><img src="img/TarjetaMastercard.jpeg" alt="Tarjeta Mastercard" class="d-block w-100 img-lg" width="500" height="400"></a>
               <div class="carousel-caption d-none d-md-block tarjeta">
                 <a href="#" class="btn btn-primary btn-lg">Ver Promociones</a>
               </div>
             </div>
 
             <div class="carousel-item" data-interval="10000">
-              <img src="img/TarjetaMacro.jpeg" alt="Tarjeta Macro" class="d-block w-100 img-lg tarjeta" width="800" height="400">
+              <a href="#"><img src="img/TarjetaMacro.jpeg" alt="Tarjeta Macro" class="d-block w-100 img-lg" width="500" height="400"></a>
               <div class="carousel-caption d-none d-md-block">
                 <a href="#" class="btn btn-primary btn-lg">Ver Promociones</a>
               </div>
             </div>
 
             <div class="carousel-item" data-interval="10000">
-              <img src="img/TarjetaGalicia.jpeg" alt="Tarjeta Galicia" class="d-block w-100 img-lg tarjeta" width="800" height="400">
+              <a href="#"><img src="img/TarjetaGalicia.jpeg" alt="Tarjeta Galicia" class="d-block w-100 img-lg" width="500" height="400"></a>
               <div class="carousel-caption d-none d-md-block">
                 <a href="#" class="btn btn-primary btn-lg">Ver Promociones</a>
               </div>
             </div>
 
             <div class="carousel-item" data-interval="10000">
-              <img src="img/TarjetaCredicoop.jpeg" alt="Tarjeta Credicoop" class="d-block w-100 img-lg tarjeta" width="800" height="400">
+              <a href="#"><img src="img/TarjetaCredicoop.jpeg" alt="Tarjeta Credicoop" class="d-block w-100 img-lg" width="500" height="400"></a>
               <div class="carousel-caption d-none d-md-block">
                 <a href="#" class="btn btn-primary btn-lg">Ver Promociones</a>
               </div>
