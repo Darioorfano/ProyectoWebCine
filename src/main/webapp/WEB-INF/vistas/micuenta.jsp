@@ -1,14 +1,13 @@
 <%@include file="header.jsp" %>
-<body>
 	<main>
-		<section class="contenedor-mi-cuenta">
+            <section class="contenedor-mi-cuenta">
                 <article class="contenedor-mi-cuenta-opciones">
                     <ul>
                         <li><i class="fas fa-user"></i>
-                        <a href="micuenta.jsp">Mis datos</a></li>
+                        <a href="miCuenta">Mis datos</a></li>
                        
                         <li><i class="fas fa-shopping-basket"></i>
-                        <a href="miscompras.jsp">Mis compras</a></li>
+                        <a href="misCompras">Mis compras</a></li>
                     </ul>
                 </article>
                 <div class="separado">
@@ -26,7 +25,7 @@
                   <div class="contenedor-datos">
                    <div class="datos">
                         <p>NOMBRE:</p>
-                        <p>        </p>
+                        <p>       </p>
                    </div>
                   <div class="datos">
                       <p>APELLIDO:</p>
@@ -40,11 +39,11 @@
                   </article>
                   <article>
                     <div class="boton-modificar-datos">
-                      <button><a href="modificardatos.jsp" class="btn btn-primary">MODIFICAR DATOS</a></button>
+                      <button><a href="modificarDatos" class="btn btn-primary">MODIFICAR DATOS</a></button>
                     </div>
                   </article>
             </div>
-            </section>	
-	</main>
-</body>
+            </section>
+    </main>
+
 <%@include file="footer.jsp" %>

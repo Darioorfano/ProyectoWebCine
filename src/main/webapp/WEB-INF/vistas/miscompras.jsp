@@ -5,10 +5,10 @@
          <article class="contenedor-mi-cuenta-opciones">
               <ul>
                   <li><i class="fas fa-user"></i>
-                    <a href="micuenta.jsp">Mis datos</a></li>
+                    <a href="miCuenta">Mis datos</a></li>
                    
                     <li><i class="fas fa-shopping-basket"></i>
-                    <a href="miscompras.jsp">Mis compras</a></li>
+                    <a href="misCompras">Mis compras</a></li>
                 </ul>
           </article>
           <article class="contenedor-tabla-compras">

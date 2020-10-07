@@ -40,6 +40,14 @@ public class ControladorPaginas {
 	}
 	
 	
+	@RequestMapping("/miCuenta")
+	public ModelAndView miCuenta() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo", "Mi Cuenta");
+		return new ModelAndView ("micuenta",modelo);
+	}
+	
+	
 	@RequestMapping("/misCompras")
 	public ModelAndView misCompras() {
 		ModelMap modelo = new ModelMap();
