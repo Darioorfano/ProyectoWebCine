@@ -47,5 +47,29 @@ public class ControladorPaginas {
 		modelo.put("titulo","Recuperar Cuenta");
 		return new ModelAndView("contraseñaOlvidada",modelo);
 	}
+	
+	
+	@RequestMapping("/miCuenta")
+	public ModelAndView miCuenta() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo", "Mi Cuenta");
+		return new ModelAndView ("micuenta",modelo);
+	}
+	
+	
+	@RequestMapping("/misCompras")
+	public ModelAndView misCompras() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo", "Mis Compras");
+		return new ModelAndView ("miscompras",modelo);
+	}
+	
+	
+	@RequestMapping("/modificarDatos")
+	public ModelAndView modificarDatos() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo", "Modificar Datos");
+		return new ModelAndView ("modificardatos",modelo);
+	}
 
 }
