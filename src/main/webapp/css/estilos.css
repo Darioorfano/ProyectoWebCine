@@ -55,10 +55,12 @@ footer {
 .col-logo {
   padding-left: 2em;
 }
+
 .col-logo p {
   font-size: 2em;
   color: whitesmoke;
 }
+
 .col-iconos {
   margin-left: auto;
   padding-right: 4em;
@@ -205,9 +207,13 @@ footer {
 }
 
  /* Estilos para la pagina de promociones */
- .tarjeta{
- 	height: 50rem;
- }
+ .img-promo{
+    width: 100px;
+    height: 150px;
+  }
+  .contenedor-promo{
+    margin-top: 5em;
+  }
 
 @media screen and (max-width: 47em) {
   

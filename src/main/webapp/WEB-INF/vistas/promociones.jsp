@@ -37,7 +37,7 @@
 
             <div class="carousel-item" data-interval="10000">
               <a href="#"><img src="img/TarjetaMastercard.jpeg" alt="Tarjeta Mastercard" class="d-block w-100 img-lg" width="500" height="400"></a>
-              <div class="carousel-caption d-none d-md-block tarjeta">
+              <div class="carousel-caption d-none d-md-block">
                 <a href="#" class="btn btn-primary btn-lg">Ver Promociones</a>
               </div>
             </div>
@@ -83,7 +83,7 @@
           <article class="card col text-center" style="width: 20rem;height: 25rem">
             <img src="img/Promo1.jpeg" alt="Promocion 1" class="img-fluid img-thumbnail card-img-card w-100" style="height: 20rem">
             <div class="card-body">
-          		<a href="#" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>	
+          		<a href="promocionUno" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>	
             </div>          
           </article>
   
@@ -125,6 +125,17 @@
           </article>
         </section>
         </div>
+        
+        <!--Susbripcion a Newsletter-->
+        <section class="text-center" style="width: 100%;">
+            <div class="text-center" style="margin-top: 3em;margin-bottom: 3em;">
+                <h4 class="text-light">Suscribase a nuestro <strong>Newsletter</strong></h4>
+                <form action="">
+                    <input type="email" name="email" id="email">
+                    <input type="submit" value="Suscribirse" class="btn btn-primary">
+                </form>
+            </div>
+        </section>
         
   	</main>
   	
