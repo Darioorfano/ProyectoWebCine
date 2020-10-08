@@ -497,6 +497,7 @@ del header queden bien posicionados*/
 	}
 	.contenedor-datos {
 		margin-top: 2em;
+		
 	}
 	.boton-modificar-datos {
 		margin-right: 1.5em;
@@ -564,6 +565,9 @@ del header queden bien posicionados*/
 		width: 100%;
 		text-align: center;
 		margin-left: 0;
+	}
+	.contenedor-datos{
+		margin:0;
 	}
 	.datos {
 		margin-bottom: 2em;
