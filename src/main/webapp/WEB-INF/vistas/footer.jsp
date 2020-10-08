@@ -7,10 +7,11 @@
       <section class="seccion-menu-inf">
         <nav class="nav-inferior">
             <ul>
-                <li><a href="peliculas">Peliculas</a></li>
+           		<li><a href="inicio">Inicio</a></li>
+                <li><a href="">Cartelera</a></li>
                 <li><a href="recomendaciones">Recomendaciones</a></li>
                 <li><a href="promociones">Promociones</a></li>
-                <li><a href="cuenta">Mi cuenta</a></li>
+                <li><a href="miCuenta">Mi cuenta</a></li>
             </ul>
         </nav>
       </section>
@@ -23,7 +24,7 @@
       </section>
        </section>
         
-     
+ 
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -71,5 +71,13 @@ public class ControladorPaginas {
 		modelo.put("titulo", "Modificar Datos");
 		return new ModelAndView ("modificardatos",modelo);
 	}
+	
+	@RequestMapping("/recomendaciones")
+		public ModelAndView recomendaciones() {
+			ModelMap modelo = new ModelMap();
+			modelo.put("titulo", "Recomendaciones");
+			return new ModelAndView("recomendaciones", modelo);
+		}
+	
 
 }
