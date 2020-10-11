@@ -90,14 +90,14 @@
           <article class="card col text-center" style="width: 20rem; height: 25rem">
             <img src="img/Promo2.jpeg" alt="Promocion 2" class="img-fluid img-thumbnail" style="height: 20rem">
             <div class="card-body">
-              <a href="#" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
+              <a href="promocionDos" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
   
           <article class="card col text-center" style="width: 20rem; height: 25rem">
             <img src="img/Promo3.jpeg" alt="Promocion 3" class="img-fluid img-thumbnail" style="height: 20rem">
             <div class="card-body">
-              <a href="#" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
+              <a href="promocionTres" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
         </div>        
@@ -106,36 +106,28 @@
           <article class="card text-center col" style="width:20rem; height: 25rem">
             <img src="img/Promo4.jpeg" alt="Promocion 4" class="img-fluid img-thumbnail" style="height: 20rem">
             <div class="card-body">
-              <a href="#" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
+              <a href="promocionCuatro" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
   
           <article class="card text-center col" style="width:20rem; height: 25rem">
             <img src="img/Promo5.jpeg" alt="Promocion 5" class="img-fluid img-thumbnail" style="height: 20rem">
             <div class="card-body">
-              <a href="#" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
+              <a href="promocionCinco" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
   
           <article class="card text-center col" style="width:20rem; height: 25rem">
             <img src="img/Promo6.jpeg" alt="Promocion 6" class="img-fluid img-thumbnail" style="height: 20rem">
             <div class="card-body">
-              <a href="#" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
+              <a href="promocionSeis" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
         </section>
         </div>
         
         <!--Susbripcion a Newsletter-->
-        <section class="text-center" style="width: 100%;">
-            <div class="text-center" style="margin-top: 3em;margin-bottom: 3em;">
-                <h4 class="text-light">Suscribase a nuestro <strong>Newsletter</strong></h4>
-                <form action="">
-                    <input type="email" name="email" id="email">
-                    <input type="submit" value="Suscribirse" class="btn btn-primary">
-                </form>
-            </div>
-        </section>
+        <%@ include file="newsletter.jsp" %>
         
   	</main>
   	

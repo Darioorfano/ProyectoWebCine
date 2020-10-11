@@ -1,5 +1,5 @@
 <%@ include file="header.jsp" %>
-    
+
 <body class="bg-dark">
     
     <!--Java Script de Bootstrap-->
@@ -8,15 +8,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
 
     <main>
-        <!--Descripcion de la promocion 1-->
+        <!--Descripcion de la promocion 6-->
         <section class="container-fluid row text-center contenedor-promo" style="margin-top: 3em;">
             <div class="container-fluid col">
-                <img src="img/Promo1.jpeg" alt="Promocion 1" class="img-promo border" style="height: 25em;width: 20em">
+                <img src="img/Promo6.jpeg" alt="Promocion 6" class="img-promo border" style="height: 25em;width: 20em">
             </div>
             <div class="container-fluid col text-center" style="margin-top: 6em; margin-right: 8em;">
-                <h1 class="text-light">Promoción 1</h1>
-                <p class="text-light">Comprando este combo te llevas 1 balde de pochoclos, una lata de gaseosas y una caja de confites</p>
-                <p class="text-light">$600</p>
+                <h1 class="text-light">Promoción 6</h1>
+                <p class="text-light">Comprando este combo te llevas 1 balde de pochoclos, 2 latas de gaseosa y Unos nachos con queso</p>
+                <p class="text-light">$750</p>
                 <a href="#" class="btn btn-primary btn-lg">Agregar al Carrito</a>
             </div>
         </section>
@@ -25,7 +25,5 @@
         <%@ include file="newsletter.jsp" %>
     </main>
 	
-	
-<%@ include file="footer.jsp" %>	
 </body>
-</html>
+<%@ include file="footer.jsp"  %>
