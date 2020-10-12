@@ -9,14 +9,14 @@
 
     <main>
         <!--Descripcion de la promocion 3-->
-        <section class="container-fluid row text-center contenedor-promo" style="margin-top: 3em;">
+        <section class="container-fluid row text-center contenedor-promo">
             <div class="container-fluid col">
-                <img src="img/Promo3.jpeg" alt="Promocion 3" class="img-promo border" style="height: 25em;width: 20em">
+                <img src="img/Promo3.jpeg" alt="Promocion 3" class="img-promo border">
             </div>
-            <div class="container-fluid col text-center" style="margin-top: 6em; margin-right: 8em;">
+            <div class="container-fluid col text-center descripcionPromo">
                 <h1 class="text-light">Promoción 3</h1>
                 <p class="text-light">Comprando este combo te llevas 2 balde de pochoclos, 3 latas de gaseosa y 3 chocolates</p>
-                <p class="text-light">$600</p>
+                <p class="text-light h3">$600</p>
                 <a href="#" class="btn btn-primary btn-lg">Agregar al Carrito</a>
             </div>
         </section>

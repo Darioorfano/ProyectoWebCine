@@ -2,14 +2,22 @@ package ar.edu.unlam.tallerweb1.controladores;
 
 import java.util.Map;
 
+import javax.inject.Inject;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import ar.edu.unlam.tallerweb1.modelo.Newsletter;
+import ar.edu.unlam.tallerweb1.servicios.ServicioNewsletter;
 
 @Controller
 public class ControladorPromociones {
+	@Inject
+	ServicioNewsletter servicioNewsletter;
 	
 	@RequestMapping("/promociones")
 	public ModelAndView promociones(){
@@ -60,4 +68,16 @@ public class ControladorPromociones {
 		return new ModelAndView("promocionSeis",modelo );
 	}
 	
+	@RequestMapping("/confirmacionNewsletter")
+	public ModelAndView confirmacionNewsletter(
+			@RequestParam(value = "email",required = false) String email
+			){
+		Newsletter newsletter = new Newsletter();
+		newsletter.setEmail(email);
+		servicioNewsletter.guardarEmail(newsletter);
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo","Newsletter");
+		modelo.put("email",email);
+		return new ModelAndView("confirmacionNewsletter",modelo);
+	}
 }

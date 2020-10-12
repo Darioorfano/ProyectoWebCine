@@ -80,22 +80,22 @@
         <h3 class="text-light">Nuestros combos</h3>
         <div class="container-fluid row">
           
-          <article class="card col text-center" style="width: 20rem;height: 25rem">
-            <img src="img/Promo1.jpeg" alt="Promocion 1" class="img-fluid img-thumbnail card-img-card w-100" style="height: 20rem">
+          <article class="card col text-center tarjetas-promociones">
+            <img src="img/Promo1.jpeg" alt="Promocion 1" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
           		<a href="promocionUno" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>	
             </div>          
           </article>
   
-          <article class="card col text-center" style="width: 20rem; height: 25rem">
-            <img src="img/Promo2.jpeg" alt="Promocion 2" class="img-fluid img-thumbnail" style="height: 20rem">
+          <article class="card col text-center tarjetas-promociones">
+            <img src="img/Promo2.jpeg" alt="Promocion 2" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
               <a href="promocionDos" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
   
-          <article class="card col text-center" style="width: 20rem; height: 25rem">
-            <img src="img/Promo3.jpeg" alt="Promocion 3" class="img-fluid img-thumbnail" style="height: 20rem">
+          <article class="card col text-center tarjetas-promociones">
+            <img src="img/Promo3.jpeg" alt="Promocion 3" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
               <a href="promocionTres" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
@@ -103,22 +103,22 @@
         </div>        
         
         <div class="container-fluid row">
-          <article class="card text-center col" style="width:20rem; height: 25rem">
-            <img src="img/Promo4.jpeg" alt="Promocion 4" class="img-fluid img-thumbnail" style="height: 20rem">
+          <article class="card text-center col tarjetas-promociones">
+            <img src="img/Promo4.jpeg" alt="Promocion 4" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
               <a href="promocionCuatro" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
   
-          <article class="card text-center col" style="width:20rem; height: 25rem">
-            <img src="img/Promo5.jpeg" alt="Promocion 5" class="img-fluid img-thumbnail" style="height: 20rem">
+          <article class="card text-center col tarjetas-promociones">
+            <img src="img/Promo5.jpeg" alt="Promocion 5" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
               <a href="promocionCinco" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
   
-          <article class="card text-center col" style="width:20rem; height: 25rem">
-            <img src="img/Promo6.jpeg" alt="Promocion 6" class="img-fluid img-thumbnail" style="height: 20rem">
+          <article class="card text-center col tarjetas-promociones">
+            <img src="img/Promo6.jpeg" alt="Promocion 6" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
               <a href="promocionSeis" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
