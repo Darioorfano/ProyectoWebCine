@@ -4,6 +4,7 @@ import javax.inject.Inject;
 import javax.transaction.Transactional;
 
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
@@ -25,10 +26,17 @@ public class RepositorioUsuarioImpl implements RepositorioUsuario {
 
 	@Override
 	public Usuario consultarUsuario(Long id) {
-		// TODO Auto-generated method stub
+		
 		return sessionFactory.getCurrentSession().get(Usuario.class, id);
 	}
 
+
+	@Override
+	public Usuario consultarUsuarioPorNombreYApellido(String nombre, String apellido) {
+		// TODO Auto-generated method stub
+		return (Usuario) sessionFactory.getCurrentSession().createCriteria(Usuario.class)
+				.add(Restrictions.eq("nombre", nombre)).add(Restrictions.eq("apellido", apellido)).uniqueResult();
+	}
 	
 	
 }

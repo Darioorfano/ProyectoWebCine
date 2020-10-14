@@ -8,11 +8,9 @@ public interface RepositorioUsuario {
 	
 	
 	Usuario consultarUsuario(Long id);
+	
 
-	
+	Usuario consultarUsuarioPorNombreYApellido(String nombre, String apellido);
  
-	
-	
-	
 	
 }

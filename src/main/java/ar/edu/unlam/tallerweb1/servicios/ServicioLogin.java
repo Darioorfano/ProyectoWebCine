@@ -7,4 +7,7 @@ public interface ServicioLogin {
 	
 	void registrarUsuario(Usuario usuario);
 	Usuario consultarUsuario(Long id);
+	Usuario consultarUsuarioPorNombreYApellido(String nombre, String apellido);
+	
+	void modificarDatos(String nombre, String apellido, String email, String contraseña);
 }

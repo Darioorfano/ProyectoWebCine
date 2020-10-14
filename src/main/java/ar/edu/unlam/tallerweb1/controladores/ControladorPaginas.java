@@ -5,6 +5,8 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import ar.edu.unlam.tallerweb1.servicios.ServicioLogin;
@@ -70,6 +72,18 @@ public class ControladorPaginas {
 		ModelMap modelo = new ModelMap();
 		modelo.put("titulo", "Modificar Datos");
 		return new ModelAndView ("modificardatos",modelo);
+	}
+	@RequestMapping(path="/confirmacionModificarDatos",method=RequestMethod.GET)
+	public ModelAndView confirmarModificarDatos(
+			@RequestParam(value="nombre",required=true) String nombre,
+			@RequestParam(value="apellido",required=true) String apellido,
+			@RequestParam(value="email",required=true) String email,
+			@RequestParam(value="contraseña",required=true) String contraseña
+			){
+		servicioLogin.modificarDatos(nombre, apellido, email, contraseña);
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo", "Confirmación modificar datos");
+		return new ModelAndView ("confirmarModificarDatos",modelo);
 	}
 	
 	@RequestMapping("/recomendaciones")
