@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheep" href="css/estilos-promociones">
+    <!-- En la etiqueta meta que posee el content, todo el contenido largo es el Id del cliente el cual lo configuramos desde
+    la consola de google -->
+     
+     
+     <meta name="google-signin-client_id" content="25726419475-rm6t8p2suuin4vef4aoja01cicq9iij9.apps.googleusercontent.com">
+       <script src="https://apis.google.com/js/platform.js" async defer></script>
+     <meta name="google-signin-scope" content="profile email">
+  
+  
+  	
+
     <title>${titulo}</title>
 
 

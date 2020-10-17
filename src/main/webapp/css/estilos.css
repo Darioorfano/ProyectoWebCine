@@ -219,6 +219,13 @@ footer {
 	color: white;
 }
 
+/*Estilos para pagina de confirmacionDeRegistro*/
+.alert{
+	height:60vh;
+}
+
+
+
 /* Estilos para la pagina de promociones */
 .img-promo {
 	width: 100px;
@@ -451,6 +458,9 @@ del header queden bien posicionados*/
 .contenedor-titulo-compras {
 	margin-bottom: 2em;
 }
+
+
+
 
 /*MEDIAS QUERIES RODRIGO*/
 @media screen and (max-width: 47em) {

@@ -7,12 +7,7 @@ public interface RepositorioUsuario {
 	void registrarUsuario(Usuario usuario);
 	
 	
-	Usuario consultarUsuario(Long id);
+	Usuario consultarUsuario(Usuario usuario);
 
-	
- 
-	
-	
-	
 	
 }

@@ -1,5 +1,12 @@
 <%@include file="header.jsp" %>
 
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
+
+
   <main class="container-fluid bg-dark pt-5 pb-5">
 
 
@@ -9,15 +16,16 @@
           <div class="card card-signin my-5 ">
             <div class="card-body pb-0">
               <h5 class="card-title text-center pb-3">Ingresa a tu cuenta</h5>
-              <form class="form-signin">
+              
+              <form:form class="form-signin" action="confirmacionLogin" modelAttribute="usuario" method="POST" >
                 <div class="form-label-group pb-3">
-                  <input type="email" id="inputEmail " class="form-control " placeholder="Correo Electronico" required
-                    autofocus>
+                  <form:input type="email"  path="email" id="inputEmail " class="form-control " placeholder="Correo Electronico" required
+                     autofocus />
 
                 </div>
 
                 <div class="form-label-group pb-3">
-                  <input type="password" id="inputPassword " class="form-control" placeholder="Contraseña" required>
+                  <form:input type="password" path="contraseña" id="inputPassword " class="form-control" placeholder="Contraseña" required />
 
                 </div>
 
@@ -28,13 +36,27 @@
                 <button class="btn btn-lg  btn-block text-uppercase mt-4 boton-logueo ancla-botones-de-login " type="submit">Iniciar
                   Sesion</button>
                   <p class="text-center pt-4"><a href="recuperaTuCuenta">¿Olvidaste tu contraseña?</a></p>
-                  <button class="btn btn-lg btn-google mt-4 btn-danger btn-block text-uppercase" type="submit"><i
-                    class="fab fa-google mr-2"></i><a class="ancla-botones-de-login" href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"> Continuar con Google</a> </button>
-                <button class="btn btn-lg btn-primary text-light mt-4 btn-facebook btn-block  text-uppercase" type="submit"><i
-                  class="fab fa-facebook-f mr-2"></i> <a class="ancla-botones-de-login" href="https://www.facebook.com/">Continuar con Facebook</a></button>
-                  <hr class="my-4">
+                  
+                  
+                 
+                 	<div class="contenedor-boton-logueo d-flex "> 
+                   	<div class="g-signin2 m-auto" data-width="259" data-height="40" data-longtitle="true" data-onsuccess="onSignIn">
+                  </div>
+      </div>
+       
+
+                  
+                   
+                   
+                   
+               <div id="fb-root" class="d-flex">
                
-              </form>
+               <div class="fb-login-button m-auto pt-4 pb-3" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="true" data-width=""></div>
+               </div>
+
+
+                
+              </form:form>
  
               </div>
               <div class="container ">

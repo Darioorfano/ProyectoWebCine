@@ -3,8 +3,12 @@ package ar.edu.unlam.tallerweb1.repositorios;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
+
+
 
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 
@@ -22,13 +26,17 @@ public class RepositorioUsuarioImpl implements RepositorioUsuario {
 		
 	}
 
-
+/* Valida si el usuario se encuentra registrado en la base de dato*/
 	@Override
-	public Usuario consultarUsuario(Long id) {
+	public Usuario consultarUsuario(Usuario usuario) {
 		// TODO Auto-generated method stub
-		return sessionFactory.getCurrentSession().get(Usuario.class, id);
+		final Session session = sessionFactory.getCurrentSession();
+		return (Usuario) session.createCriteria(Usuario.class)
+		.add(Restrictions.eq("email", usuario.getEmail()))
+		.add(Restrictions.eq("contraseña", usuario.getContraseña()))
+		.uniqueResult();
+	
 	}
-
 	
 	
 }

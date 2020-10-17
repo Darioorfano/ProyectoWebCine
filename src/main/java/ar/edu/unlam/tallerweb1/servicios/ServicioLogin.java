@@ -6,5 +6,6 @@ public interface ServicioLogin {
 	
 	
 	void registrarUsuario(Usuario usuario);
-	Usuario consultarUsuario(Long id);
+	
+	Usuario consultarUsuario(Usuario usuario);
 }
