@@ -219,22 +219,13 @@ footer {
 	color: white;
 }
 
+
 /*Estilos para pagina de confirmacionDeRegistro*/
 .alert{
 	height:60vh;
 }
 
 
-
-/* Estilos para la pagina de promociones */
-.img-promo {
-	width: 100px;
-	height: 150px;
-}
-
-.contenedor-promo {
-	margin-top: 5em;
-}
 
 @media screen and (max-width: 47em) {
 	.col-logo {

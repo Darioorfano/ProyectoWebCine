@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Pelicula {
@@ -17,6 +18,17 @@ public class Pelicula {
 	private String resumen;
 	private String tipo;
 	
+	@ManyToOne
+	private Cartelera cartelera;
+	
+	public Cartelera getCartelera() {
+		return cartelera;
+	}
+
+	public void setCartelera(Cartelera cartelera) {
+		this.cartelera = cartelera;
+	}
+
 	public Long getCodigo() {
 		return codigo;
 	}

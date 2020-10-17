@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheep" href="css/estilos-promociones">
+	<link rel="stylesheet" href="css/estilos-promociones.css">
+
+
     <!-- En la etiqueta meta que posee el content, todo el contenido largo es el Id del cliente el cual lo configuramos desde
     la consola de google -->
      
@@ -25,6 +27,9 @@
   
   	
 
+
+    
+
     <title>${titulo}</title>
 
 
@@ -34,7 +39,6 @@
           
                 <div class="col-logo">
                     <p class="logo">CINEMANIA</p>
-    
                 </div>
                  
                <div class="col-iconos">
