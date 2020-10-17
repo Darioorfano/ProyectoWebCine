@@ -16,11 +16,4 @@ public class ControladorPromociones {
 		return new ModelAndView("promociones",modelo);
 	}
 	
-	@RequestMapping("/promocionUno")
-	public ModelAndView promocionUno(){
-		ModelMap modelo = new ModelMap();
-		modelo.put("titulo", "Promocion 1");
-		return new ModelAndView("promocionUno",modelo);
-	}
-	
 }

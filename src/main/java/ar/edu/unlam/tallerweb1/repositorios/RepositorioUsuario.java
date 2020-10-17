@@ -1,18 +1,5 @@
 package ar.edu.unlam.tallerweb1.repositorios;
 
-import ar.edu.unlam.tallerweb1.modelo.Usuario;
+public class RepositorioUsuario {
 
-public interface RepositorioUsuario {
-
-	void registrarUsuario(Usuario usuario);
-	
-	
-	Usuario consultarUsuario(Long id);
-
-	
- 
-	
-	
-	
-	
 }

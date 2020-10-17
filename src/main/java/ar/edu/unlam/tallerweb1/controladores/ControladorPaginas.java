@@ -1,22 +1,14 @@
 package ar.edu.unlam.tallerweb1.controladores;
 
-import javax.inject.Inject;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import ar.edu.unlam.tallerweb1.servicios.ServicioLogin;
-
 @Controller
 public class ControladorPaginas {
-
-	@Inject 
-	private ServicioLogin servicioLogin;
 	
 	
-
 	@RequestMapping ("/inicio")
 	public ModelAndView home() {
 		ModelMap modelo = new ModelMap();
@@ -29,7 +21,6 @@ public class ControladorPaginas {
 		ModelMap modelo = new ModelMap();
 		modelo.put("titulo","Login");
 		return new ModelAndView("login",modelo);
-
 	
 	}
 
@@ -71,13 +62,5 @@ public class ControladorPaginas {
 		modelo.put("titulo", "Modificar Datos");
 		return new ModelAndView ("modificardatos",modelo);
 	}
-	
-	@RequestMapping("/recomendaciones")
-		public ModelAndView recomendaciones() {
-			ModelMap modelo = new ModelMap();
-			modelo.put("titulo", "Recomendaciones");
-			return new ModelAndView("recomendaciones", modelo);
-		}
-	
 
 }

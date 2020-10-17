@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheep" href="css/estilos-promociones">
     <title>${titulo}</title>
 
 
@@ -38,11 +37,10 @@
         
             <nav class="navegacion-superior">
                 <ul>
-                <li><a href="inicio">Inicio</a></li>
-                <li><a href="">Cartelera</a></li>
-                <li><a href="recomendaciones">Recomendaciones</a></li>
+                <li><a href="">Peliculas</a></li>
+                <li><a href="">Recomendaciones</a></li>
                 <li><a href="promociones">Promociones</a></li>
-                <li><a href="miCuenta">Mi cuenta</a></li>
+                <li><a href="">Mi cuenta</a></li>   
                 </ul>
             </nav>
       
@@ -54,11 +52,10 @@
 
         <nav id="navegacion-responsive" class="navegacion">
           <ul>
-          	<li><a href="inicio">Inicio</a></li>
-            <li><a href="">Cartelera</a></li>
-            <li><a href="recomendaciones">Recomendaciones</a></li>
-            <li><a href="promociones">Promociones</a></li>
-            <li><a href="miCuenta">Mi cuenta</a></li>
+            <li><a href="">Peliculas</a></li>
+            <li><a href="">Recomendaciones</a></li>
+            <li><a href="">Promociones</a></li>
+            <li><a href="">Mi cuenta</a></li>
           </ul>
         </nav>
       
