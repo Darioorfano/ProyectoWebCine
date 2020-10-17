@@ -6,7 +6,7 @@
                 <div class="container">
                   <h2>Modificar datos</h2>
                 </div>  
-                <form action="confirmacionModificarDatos">
+                <form action="confirmacionModificarDatos" method="post" modelAttribute="usuario" >
                   <div class="form-group">
                     <label for="nombre">Nombre: </label>
                     <input type="text" name="nombre" id="nombre" class="form-control">

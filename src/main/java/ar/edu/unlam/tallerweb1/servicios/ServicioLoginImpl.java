@@ -35,14 +35,8 @@ private RepositorioUsuario repositorioLogin;
 	}
 
 	@Override
-	public void modificarDatos(String nombre, String apellido, String email, String contraseña) {
-		if(this.consultarUsuarioPorNombreYApellido(nombre, apellido)!=null) {
-		Usuario usuarioModificado=this.consultarUsuarioPorNombreYApellido(nombre, apellido);
-		usuarioModificado.setNombre(nombre);
-		usuarioModificado.setApellido(apellido);
-		usuarioModificado.setEmail(email);
-		usuarioModificado.setContraseña(contraseña);
-		}
+	public void modificarDatos(Usuario usuario) {
+		
 	}
 
 	

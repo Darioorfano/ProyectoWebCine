@@ -37,6 +37,13 @@ public class RepositorioUsuarioImpl implements RepositorioUsuario {
 		return (Usuario) sessionFactory.getCurrentSession().createCriteria(Usuario.class)
 				.add(Restrictions.eq("nombre", nombre)).add(Restrictions.eq("apellido", apellido)).uniqueResult();
 	}
+
+
+	@Override
+	public void modificarDatos(Usuario usuario) {
+		
+		
+	}
 	
 	
 }
