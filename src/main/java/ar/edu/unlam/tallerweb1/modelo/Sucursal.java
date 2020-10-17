@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Sucursal {
@@ -13,6 +14,17 @@ public class Sucursal {
 	private Long id;
 	private String nombre;
 	private String direccion;
+	
+	@ManyToOne
+	private Cartelera cartelera;
+	
+	public Cartelera getCartelera() {
+		return cartelera;
+	}
+	
+	public void setCartelera(Cartelera cartelera) {
+		this.cartelera = cartelera;
+	}
 	
 	public Long getId() {
 		return id;

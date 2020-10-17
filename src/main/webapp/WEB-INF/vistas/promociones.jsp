@@ -10,8 +10,8 @@
       <h2 class="text-center text-light">Promociones</h2>
       
       <!--Seccion Tarjeta de Creditos-->
-      <section class="container-fluid" style="width: 500px;height: 400px; margin-bottom: 30px;margin-top: 40px">
-        <div id="carouselExampleCaptions" class="carousel slide" style="width: 500px;height: 400px;">
+      <section class="container-fluid slider-tajetas">
+        <div id="carouselExampleCaptions" class="carousel slide contenedor-slider-tarjetas">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -22,9 +22,9 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="10000">
-              <a href="#"><img src="img/TarjetaVisa.jpeg" alt="Tarjeta Visa" class="d-block img-lg w-100" width="500" height="400"></a>
+              <a href="promoTarjetaVisa"><img src="img/TarjetaVisa.jpeg" alt="Tarjeta Visa" class="d-block img-lg w-100" width="500" height="400"></a>
               <div class="carousel-caption d-none d-md-block">
-                <a href="#" class="btn btn-primary btn-lg">Ver Promociones</a>
+                <a href="promoTarjetaVisa" class="btn btn-primary btn-lg">Ver Promociones</a>
               </div>
             </div>
 
@@ -80,62 +80,54 @@
         <h3 class="text-light">Nuestros combos</h3>
         <div class="container-fluid row">
           
-          <article class="card col text-center" style="width: 20rem;height: 25rem">
-            <img src="img/Promo1.jpeg" alt="Promocion 1" class="img-fluid img-thumbnail card-img-card w-100" style="height: 20rem">
+          <article class="card col text-center tarjetas-promociones">
+            <img src="img/Promo1.jpeg" alt="Promocion 1" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
           		<a href="promocionUno" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>	
             </div>          
           </article>
   
-          <article class="card col text-center" style="width: 20rem; height: 25rem">
-            <img src="img/Promo2.jpeg" alt="Promocion 2" class="img-fluid img-thumbnail" style="height: 20rem">
+          <article class="card col text-center tarjetas-promociones">
+            <img src="img/Promo2.jpeg" alt="Promocion 2" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
-              <a href="#" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
+              <a href="promocionDos" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
   
-          <article class="card col text-center" style="width: 20rem; height: 25rem">
-            <img src="img/Promo3.jpeg" alt="Promocion 3" class="img-fluid img-thumbnail" style="height: 20rem">
+          <article class="card col text-center tarjetas-promociones">
+            <img src="img/Promo3.jpeg" alt="Promocion 3" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
-              <a href="#" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
+              <a href="promocionTres" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
         </div>        
         
         <div class="container-fluid row">
-          <article class="card text-center col" style="width:20rem; height: 25rem">
-            <img src="img/Promo4.jpeg" alt="Promocion 4" class="img-fluid img-thumbnail" style="height: 20rem">
+          <article class="card text-center col tarjetas-promociones">
+            <img src="img/Promo4.jpeg" alt="Promocion 4" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
-              <a href="#" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
+              <a href="promocionCuatro" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
   
-          <article class="card text-center col" style="width:20rem; height: 25rem">
-            <img src="img/Promo5.jpeg" alt="Promocion 5" class="img-fluid img-thumbnail" style="height: 20rem">
+          <article class="card text-center col tarjetas-promociones">
+            <img src="img/Promo5.jpeg" alt="Promocion 5" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
-              <a href="#" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
+              <a href="promocionCinco" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
   
-          <article class="card text-center col" style="width:20rem; height: 25rem">
-            <img src="img/Promo6.jpeg" alt="Promocion 6" class="img-fluid img-thumbnail" style="height: 20rem">
+          <article class="card text-center col tarjetas-promociones">
+            <img src="img/Promo6.jpeg" alt="Promocion 6" class="img-fluid img-thumbnail card-img-card w-100 img-tarjeta-promo">
             <div class="card-body">
-              <a href="#" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
+              <a href="promocionSeis" class="btn btn-dark btn-outline-primary btn-lg border-dark text-light">Ver Promocion</a>
             </div>
           </article>
         </section>
         </div>
         
         <!--Susbripcion a Newsletter-->
-        <section class="text-center" style="width: 100%;">
-            <div class="text-center" style="margin-top: 3em;margin-bottom: 3em;">
-                <h4 class="text-light">Suscribase a nuestro <strong>Newsletter</strong></h4>
-                <form action="">
-                    <input type="email" name="email" id="email">
-                    <input type="submit" value="Suscribirse" class="btn btn-primary">
-                </form>
-            </div>
-        </section>
+        <%@ include file="newsletter.jsp" %>
         
   	</main>
   	
