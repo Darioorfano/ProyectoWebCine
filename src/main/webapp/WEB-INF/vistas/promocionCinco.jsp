@@ -1,5 +1,5 @@
 <%@ include file="header.jsp" %>
-    
+
 <body class="bg-dark">
     
     <!--Java Script de Bootstrap-->
@@ -9,14 +9,14 @@
 
     <main>
         <!--Descripcion de la promocion 1-->
-        <section class="container-fluid row text-center contenedor-promo"">
+        <section class="container-fluid row text-center contenedor-promo">
             <div class="container-fluid col">
-                <img src="img/Promo1.jpeg" alt="Promocion 1" class="img-promo border">
+                <img src="img/Promo5.jpeg" alt="Promocion 5" class="img-promo border">
             </div>
             <div class="container-fluid col text-center descripcionPromo">
-                <h1 class="text-light">Promoción 1</h1>
-                <p class="text-light">Comprando este combo te llevas 1 balde de pochoclos, una lata de gaseosas y una caja de confites</p>
-                <p class="text-light h3">$600</p>
+                <h1 class="text-light">Promoción 5</h1>
+                <p class="text-light">Comprando este combo te llevas 2 latas de gaseosa y Unos nachos con queso</p>
+                <p class="text-light h3">$750</p>
                 <a href="#" class="btn btn-primary btn-lg">Agregar al Carrito</a>
             </div>
         </section>
@@ -25,7 +25,5 @@
         <%@ include file="newsletter.jsp" %>
     </main>
 	
-	
-<%@ include file="footer.jsp" %>	
 </body>
-</html>
+<%@ include file="footer.jsp"  %>
