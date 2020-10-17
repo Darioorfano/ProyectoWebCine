@@ -80,4 +80,11 @@ public class ControladorPromociones {
 		modelo.put("email",email);
 		return new ModelAndView("confirmacionNewsletter",modelo);
 	}
+	
+	@RequestMapping("/promoTarjetaVisa")
+	public ModelAndView promoTarjetaVisa() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo","Promo Tarjeta Visa");
+		return new ModelAndView("promoTarjetaVisa",modelo);
+	}
 }

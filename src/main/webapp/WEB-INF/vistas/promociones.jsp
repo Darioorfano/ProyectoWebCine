@@ -10,8 +10,8 @@
       <h2 class="text-center text-light">Promociones</h2>
       
       <!--Seccion Tarjeta de Creditos-->
-      <section class="container-fluid" style="width: 500px;height: 400px; margin-bottom: 30px;margin-top: 40px">
-        <div id="carouselExampleCaptions" class="carousel slide" style="width: 500px;height: 400px;">
+      <section class="container-fluid slider-tajetas">
+        <div id="carouselExampleCaptions" class="carousel slide contenedor-slider-tarjetas">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -22,9 +22,9 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="10000">
-              <a href="#"><img src="img/TarjetaVisa.jpeg" alt="Tarjeta Visa" class="d-block img-lg w-100" width="500" height="400"></a>
+              <a href="promoTarjetaVisa"><img src="img/TarjetaVisa.jpeg" alt="Tarjeta Visa" class="d-block img-lg w-100" width="500" height="400"></a>
               <div class="carousel-caption d-none d-md-block">
-                <a href="#" class="btn btn-primary btn-lg">Ver Promociones</a>
+                <a href="promoTarjetaVisa" class="btn btn-primary btn-lg">Ver Promociones</a>
               </div>
             </div>
 
