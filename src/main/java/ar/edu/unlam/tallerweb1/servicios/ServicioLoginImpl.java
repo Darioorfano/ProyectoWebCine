@@ -17,8 +17,15 @@ public class ServicioLoginImpl implements ServicioLogin {
 private RepositorioUsuario servicioLogin;
 	
 	@Override
-	public void registrarUsuario(Usuario usuario) {
-	servicioLogin.registrarUsuario(usuario);
+	public Boolean registrarUsuario(Usuario usuario) {
+		if(servicioLogin.consultarUsuario(usuario)==null) {
+			
+			return servicioLogin.registrarUsuario(usuario);
+		}else {
+			return false;
+		}
+		
+	
 
 	}
 
