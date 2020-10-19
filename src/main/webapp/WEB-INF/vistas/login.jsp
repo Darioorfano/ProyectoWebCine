@@ -1,8 +1,11 @@
-<%@include file="header.jsp" %>
+<!--
+<%@include file="header.jsp" %>  
+-->
+
 
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 
 
@@ -17,17 +20,19 @@
             <div class="card-body pb-0">
               <h5 class="card-title text-center pb-3">Ingresa a tu cuenta</h5>
               
-              <form:form class="form-signin" action="confirmacionLogin" modelAttribute="usuario" method="POST" >
+              <form:form class="form-signin" action="validacionLogin" modelAttribute="usuario" method="POST" >
                 <div class="form-label-group pb-3">
-                  <form:input type="email"  path="email" id="inputEmail " class="form-control " placeholder="Correo Electronico" required
+                  <form:input type="email"  path="email" id="email" class="form-control " placeholder="Correo Electronico" required
                      autofocus />
 
                 </div>
 
                 <div class="form-label-group pb-3">
-                  <form:input type="password" path="contraseña" id="inputPassword " class="form-control" placeholder="Contraseña" required />
+                  <form:input type="password" path="contraseña" id="contraseña" class="form-control" placeholder="Contraseña" required />
 
                 </div>
+
+		
 
                 <div class="custom-control custom-checkbox mb-3">
                   <input type="checkbox" class="custom-control-input" id="customCheck1">

@@ -45,8 +45,8 @@ public class ControladorPaginas {
 	}
 	
 	
-	@RequestMapping(path = "/confirmacionLogin", method = RequestMethod.POST)
-	public ModelAndView login(@ModelAttribute("usuario") Usuario usuario, HttpServletRequest request) {
+	@RequestMapping(path = "/validacionLogin", method = RequestMethod.POST)
+	public ModelAndView validarLogin(@ModelAttribute("usuario") Usuario usuario, HttpServletRequest request) {
 		ModelMap modelo = new ModelMap();
 		
 		// invoca el metodo consultarUsuario del servicio y hace un redirect a la URL /home, esto es, en lugar de enviar a una vista
@@ -59,7 +59,7 @@ public class ControladorPaginas {
 			// si el usuario no existe agrega un mensaje de error en el modelo.
 			modelo.put("error", "Usuario o clave incorrecta");
 		}
-		return new ModelAndView("", modelo);
+		return new ModelAndView("login", modelo);
 	}
 	
 	

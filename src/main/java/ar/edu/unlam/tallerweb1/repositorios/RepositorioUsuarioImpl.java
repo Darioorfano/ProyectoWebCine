@@ -26,7 +26,7 @@ public class RepositorioUsuarioImpl implements RepositorioUsuario {
 		
 	}
 
-/* Valida si el usuario se encuentra registrado en la base de dato*/
+/* Valida si el usuario se encuentra registrado en la base de datos*/
 	@Override
 	public Usuario consultarUsuario(Usuario usuario) {
 		// TODO Auto-generated method stub
