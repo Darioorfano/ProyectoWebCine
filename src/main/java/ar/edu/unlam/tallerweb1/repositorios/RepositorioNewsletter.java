@@ -5,5 +5,5 @@ import ar.edu.unlam.tallerweb1.modelo.Newsletter;
 public interface RepositorioNewsletter {
 
 	void guardarEmail(Newsletter newsletter);
-
+	Newsletter consultarNewsletter();
 }

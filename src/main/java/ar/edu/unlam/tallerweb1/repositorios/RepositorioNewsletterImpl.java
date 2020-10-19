@@ -18,5 +18,7 @@ public class RepositorioNewsletterImpl implements RepositorioNewsletter {
 	public void guardarEmail(Newsletter newsletter) {
 		sessionFactory.getCurrentSession().save(newsletter);
 	}
+	
+	
 
 }
