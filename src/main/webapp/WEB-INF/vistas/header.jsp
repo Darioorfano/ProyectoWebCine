@@ -54,7 +54,7 @@
             <nav class="navegacion-superior">
                 <ul>
                 <li><a href="inicio">Inicio</a></li>
-                <li><a href="">Cartelera</a></li>
+                <li><a href="cartelera">Cartelera</a></li>
                 <li><a href="recomendaciones">Recomendaciones</a></li>
                 <li><a href="promociones">Promociones</a></li>
                 <li><a href="miCuenta">Mi cuenta</a></li>

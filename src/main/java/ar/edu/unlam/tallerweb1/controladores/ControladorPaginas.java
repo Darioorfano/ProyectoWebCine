@@ -44,8 +44,9 @@ public class ControladorPaginas {
 	
 	}
 	
+	/* Verificamos que el usuario agregado este registrado en la base de datos*/
+	@RequestMapping(path ="/validacionLogin", method = RequestMethod.POST)
 	
-	@RequestMapping(path = "/validacionLogin", method = RequestMethod.POST)
 	public ModelAndView validarLogin(@ModelAttribute("usuario") Usuario usuario, HttpServletRequest request) {
 		ModelMap modelo = new ModelMap();
 		
@@ -54,37 +55,54 @@ public class ControladorPaginas {
 		Usuario usuarioBuscado=servLogin.consultarUsuario(usuario);
 		if (usuarioBuscado != null) {
 			request.getSession().setAttribute("rol", usuarioBuscado.getRol());
-			return new ModelAndView("redirect:/inicio");
+			return new ModelAndView("redirect:/miCuenta");
 		} else {
 			// si el usuario no existe agrega un mensaje de error en el modelo.
+			
 			modelo.put("error", "Usuario o clave incorrecta");
+		
 		}
 		return new ModelAndView("login", modelo);
 	}
-	
-	
-	
-	
+
 	
 	
 	@RequestMapping("/registro")
 	public ModelAndView registro() {
-		
+	Usuario usuario=new Usuario();	
 	ModelMap modelo = new ModelMap();
-	modelo.put("titulo","Registro");
 	
-		
+	modelo.put("titulo","Registro");
+	modelo.put("usuario", usuario);
+	
 		return new ModelAndView("registro",modelo);
 	}
 	
+	/*Verificamos que el usuario no se encuentre registrado en la bd, para poder almacenarlo*/
+	@RequestMapping(path ="/guardarUsuario", method = RequestMethod.POST)
 
-	@RequestMapping("/confirmacionRegistro")
-	public ModelAndView confirmacionRegistro() {
-		ModelMap modelo = new ModelMap();
-		return new ModelAndView("confirmacionRegistro", modelo);
+	public ModelAndView registrarUsuario(@ModelAttribute("usuario") Usuario usuario, HttpServletRequest request) {
+	/*Devolvemos true si se registro correctamente*/
+		Boolean usuarioRegistrado=servLogin.registrarUsuario(usuario);
+		ModelMap modelo=new ModelMap();
+		
+		
+		if (usuarioRegistrado) {
+			
+			
+			return new ModelAndView("redirect:/login");
+		} else {
+			// si el usuario no existe agrega un mensaje de error en el modelo.
+			
+			modelo.put("error", "El email no esta disponible");
+		
+		}
+		
+	
+	return new ModelAndView("registro", modelo);
 	}
-
-
+	
+	
 
 	@RequestMapping ("/recuperaTuCuenta")
 	public ModelAndView recuperarCuenta() {

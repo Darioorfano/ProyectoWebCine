@@ -1,6 +1,5 @@
-<!--
+
 <%@include file="header.jsp" %>  
--->
 
 
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
@@ -19,20 +18,21 @@
           <div class="card card-signin my-5 ">
             <div class="card-body pb-0">
               <h5 class="card-title text-center pb-3">Ingresa a tu cuenta</h5>
+           
               
-              <form:form class="form-signin" action="validacionLogin" modelAttribute="usuario" method="POST" >
+              
+              <form:form class="form-signin" modelAttribute="usuario" method="POST" action="validacionLogin">
                 <div class="form-label-group pb-3">
-                  <form:input type="email"  path="email" id="email" class="form-control " placeholder="Correo Electronico" required
-                     autofocus />
+                  <form:input type="email" path="email" id="email" class="form-control" placeholder="Correo Electronico"/>
 
                 </div>
 
                 <div class="form-label-group pb-3">
-                  <form:input type="password" path="contraseña" id="contraseña" class="form-control" placeholder="Contraseña" required />
+                  <form:input type="password" path="contraseña" id="contraseña" class="form-control" placeholder="Contraseña" />
+					<!-- Path hace referencia al atributo que posee modelo Usuario hace matcheo -->
+	                </div>
 
-                </div>
-
-		
+	
 
                 <div class="custom-control custom-checkbox mb-3">
                   <input type="checkbox" class="custom-control-input" id="customCheck1">
@@ -40,6 +40,13 @@
                 </div>
                 <button class="btn btn-lg  btn-block text-uppercase mt-4 boton-logueo ancla-botones-de-login " type="submit">Iniciar
                   Sesion</button>
+                  
+                   <!-- Si hay un error lanza el error agregado en el modelmap -->
+             <c:if test="${not empty error}">
+		<h4><span>${error}</span></h4>
+			<br>
+			</c:if>
+                  
                   <p class="text-center pt-4"><a href="recuperaTuCuenta">¿Olvidaste tu contraseña?</a></p>
                   
                   
