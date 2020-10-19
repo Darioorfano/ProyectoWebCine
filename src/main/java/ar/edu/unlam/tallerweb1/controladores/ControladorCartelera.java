@@ -1,5 +1,8 @@
 package ar.edu.unlam.tallerweb1.controladores;
 
+import java.util.Calendar;
+import java.util.Set;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Controller;
@@ -20,7 +23,7 @@ public class ControladorCartelera {
 		public ModelAndView cartelera(){
 		
 		Cartelera cartelera = new Cartelera();
-		cartelera.setFecha("1-11-2020");
+		cartelera.setFecha("25/08/1998");
 		cartelera.setHorario(14.00);
 		ModelMap modelo = new ModelMap();
 		
