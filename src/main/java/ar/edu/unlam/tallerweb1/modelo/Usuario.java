@@ -1,5 +1,6 @@
 package ar.edu.unlam.tallerweb1.modelo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,11 +10,24 @@ import javax.persistence.Id;
 public class Usuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+
 	private Long id;
+	
+
 	private String nombre;
+
 	private String apellido;
+	
+
 	private String email;
+	
+	
 	private String contraseña;
+	
+
+	private String rol;
+	
 	
 	public Long getId() {
 		return id;
@@ -46,9 +60,11 @@ public class Usuario {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
-
-
-
-
+	public String getRol() {
+		return rol;
+	}
+	public void setRol(String rol) {
+		this.rol = rol;
+	}
 
 }

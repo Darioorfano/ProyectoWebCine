@@ -13,7 +13,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/estilos-promociones.css">
+	<link rel="stylesheet" href="css/estilos-promociones.css">
+
+
+    <!-- En la etiqueta meta que posee el content, todo el contenido largo es el Id del cliente el cual lo configuramos desde
+    la consola de google -->
+     
+     
+     <meta name="google-signin-client_id" content="25726419475-rm6t8p2suuin4vef4aoja01cicq9iij9.apps.googleusercontent.com">
+       <script src="https://apis.google.com/js/platform.js" async defer></script>
+     <meta name="google-signin-scope" content="profile email">
+  
+  
+  	
+
+
+    
+
     <title>${titulo}</title>
 
 

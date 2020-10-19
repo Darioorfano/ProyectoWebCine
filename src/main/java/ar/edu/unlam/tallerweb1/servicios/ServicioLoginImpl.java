@@ -23,9 +23,9 @@ private RepositorioUsuario servicioLogin;
 	}
 
 	@Override
-	public Usuario consultarUsuario(Long id) {
+	public Usuario consultarUsuario(Usuario usuario) {
 		// TODO Auto-generated method stub
-		return servicioLogin.consultarUsuario(id);
+		return servicioLogin.consultarUsuario(usuario);
 	}
 
 
