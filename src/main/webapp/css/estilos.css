@@ -219,12 +219,6 @@ footer {
 	color: white;
 }
 
-
-/*Estilos para pagina de confirmacionDeRegistro*/
-.alert{
-	height:60vh;
-}
-
 /*Estilos cartelera*/
 
 .fondo-cartelera{
@@ -389,7 +383,7 @@ del header queden bien posicionados*/
 	
 	.slider-foto-estreno{
 	display:none;
-}
+	}
 	
 }
 
