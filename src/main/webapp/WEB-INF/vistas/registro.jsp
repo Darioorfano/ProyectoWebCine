@@ -16,31 +16,31 @@
           <div class="card card-signin my-5">
             <div class="card-body pb-0">
               <h5 class="card-title text-center pb-3">Registrate</h5>
-              <form:form class="form-signin" action="confirmacionRegistro" modelAttribute="usuario" method="POST">
+              <form:form class="form-signin" method="POST" action="guardarUsuario" modelAttribute="usuario">
                 
                 <div class="form-label-group pb-3">
-                    <form:input type="text" id="nombre"  path="nombre" class="form-control " placeholder="Nombre" required
-                      autofocus />
+                    <form:input type="text" id="nombre" path="nombre" class="form-control" placeholder="Nombre" 
+                       />
   	
                   </div>
                    
                    
                    
                   <div class="form-label-group pb-3">
-                    <form:input type="text" id="apellido" path="apellido" class="form-control " placeholder="Apellido" required
-                      autofocus />
+                    <form:input type="text" id="apellido" path="apellido" class="form-control " placeholder="Apellido" 
+                       />
   					
                   </div>
                   
                   
                 <div class="form-label-group pb-3">
-                  <form:input type="email" id="email" path="email" class="form-control " placeholder="Correo Electronico" required
-                    autofocus />
+                  <form:input type="email" id="email" path="email" class="form-control " placeholder="Correo Electronico" 
+                    />
 
                 </div>
 
                 <div class="form-label-group pb-3">
-                  <form:input type="password" id="contraseña" path="contraseña" class="form-control" placeholder="Contraseña" required />
+                  <form:input type="password" id="contraseña" path="contraseña" class="form-control" placeholder="Contraseña"/>
 
                 </div>
 
@@ -48,7 +48,10 @@
                 <button class="btn btn-lg  btn-block text-uppercase mt-4 boton-logueo ancla-botones-de-login " type="submit">Registrarse
                 	</button>
                   
-             
+                <c:if test="${not empty error}">
+		<h4><span>${error}</span></h4>
+			<br>
+			</c:if>
               
               
                   <hr class="my-4">
