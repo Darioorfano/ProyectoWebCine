@@ -41,8 +41,7 @@ public class RepositorioUsuarioImpl implements RepositorioUsuario {
 
 	@Override
 	public void modificarDatos(Usuario usuario) {
-		
-		
+		sessionFactory.getCurrentSession().update(usuario);
 	}
 	
 	

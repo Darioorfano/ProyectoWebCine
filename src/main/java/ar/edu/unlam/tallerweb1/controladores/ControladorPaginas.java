@@ -77,14 +77,15 @@ public class ControladorPaginas {
 		return new ModelAndView ("modificardatos",modelo);
 	}
 	
-	@RequestMapping(path="/confirmacionModificarDatos",method=RequestMethod.GET)
+	@RequestMapping(path="/validarModificarDatos",method=RequestMethod.POST)
 	public ModelAndView confirmarModificarDatos(
-			@ModelAttribute("usuario") Usuario usuario, HttpServletRequest request
+			@ModelAttribute("usuario") Usuario usuario,
+			HttpServletRequest request
 			){
-		servicioLogin.modificarDatos(nombre, apellido, email, contraseña);
-		ModelMap modelo = new ModelMap();
-		modelo.put("titulo", "Confirmación modificar datos");
-		return new ModelAndView ("confirmarModificarDatos",modelo);
+		servicioLogin.modificarDatos(usuario);
+		
+		return new ModelAndView ("redirect:/inicio");
+		
 	}
 	
 	@RequestMapping("/recomendaciones")

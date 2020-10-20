@@ -14,7 +14,7 @@ import ar.edu.unlam.tallerweb1.repositorios.RepositorioUsuario;
 public class ServicioLoginImpl implements ServicioLogin {
 
 	@Inject
-private RepositorioUsuario repositorioLogin;
+	private RepositorioUsuario repositorioLogin;
 	
 	@Override
 	public void registrarUsuario(Usuario usuario) {
@@ -36,7 +36,7 @@ private RepositorioUsuario repositorioLogin;
 
 	@Override
 	public void modificarDatos(Usuario usuario) {
-		
+		repositorioLogin.modificarDatos(usuario);
 	}
 
 	
