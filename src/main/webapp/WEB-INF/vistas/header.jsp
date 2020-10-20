@@ -29,8 +29,7 @@
   	
 
 
-    
->>>>>>> master
+
 
     <title>${titulo}</title>
 
@@ -55,16 +54,13 @@
         
             <nav class="navegacion-superior">
                 <ul>
-<<<<<<< HEAD
-                <li><a href="">Peliculas</a></li>
-                <li><a href="">Recomendaciones</a></li>
-=======
+
                 <li><a href="inicio">Inicio</a></li>
                 <li><a href="cartelera">Cartelera</a></li>
                 <li><a href="recomendaciones">Recomendaciones</a></li>
->>>>>>> master
+
                 <li><a href="promociones">Promociones</a></li>
-                <li><a href="">Mi cuenta</a></li>   
+                <li><a href="miCuenta">Mi cuenta</a></li>   
                 </ul>
             </nav>
       
