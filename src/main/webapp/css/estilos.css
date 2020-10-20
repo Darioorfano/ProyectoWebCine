@@ -534,6 +534,7 @@ del header queden bien posicionados*/
 	}
 	.contenedor-datos {
 		margin-top: 2em;
+		
 	}
 	.boton-modificar-datos {
 		margin-right: 1.5em;
@@ -602,6 +603,9 @@ del header queden bien posicionados*/
 		text-align: center;
 		margin-left: 0;
 	}
+	.contenedor-datos{
+		margin:0;
+	}
 	.datos {
 		margin-bottom: 2em;
 		margin-left: 3em;
@@ -653,4 +657,252 @@ del header queden bien posicionados*/
 
 .divRecomendaciones h4 {
 	margin-top: 40px;
+}
+
+
+/*PAGINA COMPRA*/
+#flex{
+    display: flex;
+}
+#division{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.agrupacion-entrada{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.entradas{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-descripcion{
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo-descripcion p{
+    font-size: 12px;
+    margin-right: 1em;
+    color: #fff;
+}
+.logo{
+    margin-right: 1em;
+    width: 30%;
+    margin-bottom: 1em;
+}
+.precio-entrada{
+    width: 100%;
+    background-color: #464d61;
+}
+.precio-entrada p {
+    color: #fff;
+    margin-top: 2em;
+    text-align: center;
+}
+.precio-entrada:hover{
+    background-color:rgb(41, 41, 41);
+}
+.contenedor-entrada-general{
+    width: 42%;
+    background-color: black;
+    display: flex;
+    padding-left:1em;
+    
+}
+.contenedor-entrada-descuento{
+    width: 60%;
+    background-color:#000;
+    display: flex;
+    padding-left:1em;
+   
+    margin-right:2em;
+    margin-bottom: 2em;
+}
+.titulo-informacion-entrada p{
+    color: #fff;
+}
+
+.contenedor-informacion-pelicula{
+    border-style: solid;
+    margin-top: 120px;
+    padding: 10px;
+}
+
+#flex{
+    display: flex;
+}
+#division{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.agrupacion-entrada{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.entradas{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-descripcion{
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo-descripcion p{
+    font-size: 12px;
+    margin-right: 1em;
+    color: #fff;
+}
+.logo{
+    margin-right: 1em;
+    width: 30%;
+    margin-bottom: 1em;
+}
+.precio-entrada{
+    width: 100%;
+    background-color: #464d61;
+}
+.precio-entrada p {
+    color: #fff;
+    margin-top: 2em;
+    text-align: center;
+}
+.precio-entrada:hover{
+    background-color:rgb(41, 41, 41);
+}
+.contenedor-entrada-general{
+    width: 42%;
+    background-color: black;
+    display: flex;
+    padding-left:1em;
+    
+}
+.contenedor-entrada-descuento{
+    width: 60%;
+    background-color:#000;
+    display: flex;
+    padding-left:1em;
+   
+    margin-right:2em;
+    margin-bottom: 2em;
+}
+.titulo-informacion-entrada p{
+    color: #fff;
+}
+
+.contenedor-informacion-pelicula{
+    border-style: solid;
+    margin-top: 120px;
+    padding: 10px;
+}
+
+.imagenTitulo{
+    display: flex;
+    
+}
+
+.imagenTitulo img{
+    width: 150px;
+}
+
+.imagenTitulo h1{
+   
+    margin-top: -8px;
+    margin-bottom: 25px;
+}
+
+.divInformacionPelicula {
+
+    margin-left: 20px;
+}
+
+.divInformacionPelicula p{
+    margin-top: -20px;
+    
+}
+
+.ubicacion{
+   display: flex;
+}
+
+.ubicacion h7{
+    margin-left: 10px;
+    margin-top: -2px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.entradaComprar{
+    margin-top: 20px;
+    display: flex;
+    border-style: groove;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.entradaComprar img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    
+}
+
+.left{
+    margin-left: 20px;
+}
+
+.left h7{
+    font-weight: bold;
+    
+}
+
+.left p{
+    margin-top: -5px;
+}
+
+#precio{
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+.total{
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    font-weight: bold;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.volver{
+    background-color: #464d61;
+    color: #fff;
+    padding: 10px;
+}
+
+.siguiente{
+    background-color:#000;
+    color: #fff;
+    padding: 10px;
 }

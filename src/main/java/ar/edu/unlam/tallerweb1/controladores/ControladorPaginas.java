@@ -132,5 +132,24 @@ public class ControladorPaginas {
 		modelo.put("titulo", "Modificar Datos");
 		return new ModelAndView ("modificardatos",modelo);
 	}
+	
+	@RequestMapping(path="/validarModificarDatos",method=RequestMethod.POST)
+	public ModelAndView confirmarModificarDatos(
+			@ModelAttribute("usuario") Usuario usuario,
+			HttpServletRequest request
+			){
+		servLogin.modificarDatos(usuario);
+		
+		return new ModelAndView ("redirect:/inicio");
+		
+	}
+	
+	@RequestMapping("/recomendaciones")
+		public ModelAndView recomendaciones() {
+			ModelMap modelo = new ModelMap();
+			modelo.put("titulo", "Recomendaciones");
+			return new ModelAndView("recomendaciones", modelo);
+		}
+	
 
 }

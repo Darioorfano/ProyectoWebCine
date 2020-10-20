@@ -14,27 +14,36 @@ import ar.edu.unlam.tallerweb1.repositorios.RepositorioUsuario;
 public class ServicioLoginImpl implements ServicioLogin {
 
 	@Inject
-private RepositorioUsuario servicioLogin;
+	private RepositorioUsuario repositorioLogin;
 	
 	@Override
 	public Boolean registrarUsuario(Usuario usuario) {
-		if(servicioLogin.consultarUsuario(usuario)==null) {
+		if(repositorioLogin.consultarUsuario(usuario)==null) {
 			
-			return servicioLogin.registrarUsuario(usuario);
+			return repositorioLogin.registrarUsuario(usuario);
 		}else {
 			return false;
 		}
-		
-	
 
 	}
 
 	@Override
 	public Usuario consultarUsuario(Usuario usuario) {
 		// TODO Auto-generated method stub
-		return servicioLogin.consultarUsuario(usuario);
+
+		return repositorioLogin.consultarUsuario(usuario);
+
+	}
+	
+	@Override
+	public Usuario consultarUsuarioPorNombreYApellido(String nombre, String apellido) {
+		// TODO Auto-generated method stub
+		return repositorioLogin.consultarUsuarioPorNombreYApellido(nombre, apellido);
 	}
 
-
+	@Override
+	public void modificarDatos(Usuario usuario) {
+		repositorioLogin.modificarDatos(usuario);
+	}
 
 }

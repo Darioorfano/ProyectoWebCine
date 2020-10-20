@@ -7,6 +7,17 @@ public interface RepositorioUsuario {
 	Boolean registrarUsuario(Usuario usuario);
 	
 	
+
+	Usuario consultarUsuario(Long id);
+	
+
+	Usuario consultarUsuarioPorNombreYApellido(String nombre, String apellido);
+
+
+	void modificarDatos(Usuario usuario);
+ 
+	
+
 	Usuario consultarUsuario(Usuario usuario);
 
 

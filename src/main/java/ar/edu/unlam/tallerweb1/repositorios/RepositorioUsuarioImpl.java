@@ -35,6 +35,26 @@ public class RepositorioUsuarioImpl implements RepositorioUsuario {
 
 /* Valida si el usuario se encuentra registrado en la base de datos*/
 	@Override
+	public Usuario consultarUsuario(Long id) {
+		
+		return sessionFactory.getCurrentSession().get(Usuario.class, id);
+	}
+
+
+	@Override
+	public Usuario consultarUsuarioPorNombreYApellido(String nombre, String apellido) {
+		// TODO Auto-generated method stub
+		return (Usuario) sessionFactory.getCurrentSession().createCriteria(Usuario.class)
+				.add(Restrictions.eq("nombre", nombre)).add(Restrictions.eq("apellido", apellido)).uniqueResult();
+	}
+
+
+	@Override
+	public void modificarDatos(Usuario usuario) {
+		sessionFactory.getCurrentSession().update(usuario);
+	}
+
+	@Override
 	public Usuario consultarUsuario(Usuario usuario) {
 		// TODO Auto-generated method stub
 		final Session session = sessionFactory.getCurrentSession();
@@ -44,6 +64,7 @@ public class RepositorioUsuarioImpl implements RepositorioUsuario {
 		.uniqueResult();
 	
 	}
+
 	
 	
 }
