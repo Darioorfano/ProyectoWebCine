@@ -4,9 +4,10 @@ import ar.edu.unlam.tallerweb1.modelo.Usuario;
 
 public interface RepositorioUsuario {
 
-	void registrarUsuario(Usuario usuario);
+	Boolean registrarUsuario(Usuario usuario);
 	
 	
+
 	Usuario consultarUsuario(Long id);
 	
 
@@ -15,5 +16,9 @@ public interface RepositorioUsuario {
 
 	void modificarDatos(Usuario usuario);
  
+	
+
+	Usuario consultarUsuario(Usuario usuario);
+
 	
 }

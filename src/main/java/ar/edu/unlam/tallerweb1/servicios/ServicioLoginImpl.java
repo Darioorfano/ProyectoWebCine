@@ -17,15 +17,22 @@ public class ServicioLoginImpl implements ServicioLogin {
 	private RepositorioUsuario repositorioLogin;
 	
 	@Override
-	public void registrarUsuario(Usuario usuario) {
-	repositorioLogin.registrarUsuario(usuario);
+	public Boolean registrarUsuario(Usuario usuario) {
+		if(repositorioLogin.consultarUsuario(usuario)==null) {
+			
+			return repositorioLogin.registrarUsuario(usuario);
+		}else {
+			return false;
+		}
 
 	}
 
 	@Override
-	public Usuario consultarUsuario(Long id) {
+	public Usuario consultarUsuario(Usuario usuario) {
 		// TODO Auto-generated method stub
-		return repositorioLogin.consultarUsuario(id);
+
+		return repositorioLogin.consultarUsuario(usuario);
+
 	}
 	
 	@Override
@@ -38,9 +45,5 @@ public class ServicioLoginImpl implements ServicioLogin {
 	public void modificarDatos(Usuario usuario) {
 		repositorioLogin.modificarDatos(usuario);
 	}
-
-	
-
-
 
 }

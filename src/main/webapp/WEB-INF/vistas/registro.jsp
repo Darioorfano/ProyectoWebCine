@@ -1,4 +1,12 @@
 <%@include file="header.jsp" %>
+
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
+
+
 <main class="container-fluid bg-dark pt-5 pb-5">
 
 
@@ -8,29 +16,31 @@
           <div class="card card-signin my-5">
             <div class="card-body pb-0">
               <h5 class="card-title text-center pb-3">Registrate</h5>
-              <form class="form-signin">
+              <form:form class="form-signin" method="POST" action="guardarUsuario" modelAttribute="usuario">
                 
                 <div class="form-label-group pb-3">
-                    <input type="text" id="nombreCompleto " class="form-control " placeholder="Nombre" required
-                      autofocus>
-  
+                    <form:input type="text" id="nombre" path="nombre" class="form-control" placeholder="Nombre" 
+                       />
+  	
                   </div>
-                  
+                   
+                   
+                   
                   <div class="form-label-group pb-3">
-                    <input type="text" id="apellido " class="form-control " placeholder="Apellido" required
-                      autofocus>
-  
+                    <form:input type="text" id="apellido" path="apellido" class="form-control " placeholder="Apellido" 
+                       />
+  					
                   </div>
                   
                   
                 <div class="form-label-group pb-3">
-                  <input type="email" id="inputEmail " class="form-control " placeholder="Correo Electronico" required
-                    autofocus>
+                  <form:input type="email" id="email" path="email" class="form-control " placeholder="Correo Electronico" 
+                    />
 
                 </div>
 
                 <div class="form-label-group pb-3">
-                  <input type="password" id="inputPassword " class="form-control" placeholder="Contraseña" required>
+                  <form:input type="password" id="contraseña" path="contraseña" class="form-control" placeholder="Contraseña"/>
 
                 </div>
 
@@ -38,15 +48,17 @@
                 <button class="btn btn-lg  btn-block text-uppercase mt-4 boton-logueo ancla-botones-de-login " type="submit">Registrarse
                 	</button>
                   
-                  <button class="btn btn-lg btn-google mt-4 btn-danger btn-block text-uppercase" type="submit"><i
-                    class="fab fa-google mr-2"></i><a class="ancla-botones-de-login" href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"> Continuar con Google</a> </button>
-                <button class="btn btn-lg btn-primary text-light mt-4 btn-facebook btn-block  text-uppercase" type="submit"><i
-                  class="fab fa-facebook-f mr-2"></i> <a class="ancla-botones-de-login" href="https://www.facebook.com/">Continuar con Facebook</a></button>
+                <c:if test="${not empty error}">
+		<h4><span>${error}</span></h4>
+			<br>
+			</c:if>
+              
+              
                   <hr class="my-4">
                 
              
                
-              </form>
+              </form:form>
  
               </div>
              
@@ -58,7 +70,7 @@
     </div>
 
 
-
+  </script>
   </main>
 
 
