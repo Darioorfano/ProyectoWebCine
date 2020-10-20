@@ -14,7 +14,23 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/estilos.css">
 
+
     <link rel="stylesheet" href="css/estilos-promociones.css">
+
+    <!-- En la etiqueta meta que posee el content, todo el contenido largo es el Id del cliente el cual lo configuramos desde
+    la consola de google -->
+     
+     
+     <meta name="google-signin-client_id" content="25726419475-rm6t8p2suuin4vef4aoja01cicq9iij9.apps.googleusercontent.com">
+       <script src="https://apis.google.com/js/platform.js" async defer></script>
+     <meta name="google-signin-scope" content="profile email">
+  
+  
+  	
+
+
+    
+>>>>>>> master
 
     <title>${titulo}</title>
 
@@ -39,8 +55,14 @@
         
             <nav class="navegacion-superior">
                 <ul>
+<<<<<<< HEAD
                 <li><a href="">Peliculas</a></li>
                 <li><a href="">Recomendaciones</a></li>
+=======
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="cartelera">Cartelera</a></li>
+                <li><a href="recomendaciones">Recomendaciones</a></li>
+>>>>>>> master
                 <li><a href="promociones">Promociones</a></li>
                 <li><a href="">Mi cuenta</a></li>   
                 </ul>
