@@ -1,10 +1,14 @@
 package ar.edu.unlam.tallerweb1.modelo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
 
 @Entity
 public class Usuario {
@@ -28,7 +32,15 @@ public class Usuario {
 
 	private String rol;
 	
+	private List<Entrada>entradas=new ArrayList<>();
 	
+	
+	public List<Entrada> getEntradas() {
+		return entradas;
+	}
+	public void setEntradas(List<Entrada> entradas) {
+		this.entradas = entradas;
+	}
 	public Long getId() {
 		return id;
 	}

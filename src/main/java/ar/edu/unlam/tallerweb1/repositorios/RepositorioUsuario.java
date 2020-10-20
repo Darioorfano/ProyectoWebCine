@@ -6,8 +6,6 @@ public interface RepositorioUsuario {
 
 	Boolean registrarUsuario(Usuario usuario);
 	
-	
-
 	Usuario consultarUsuario(Long id);
 	
 

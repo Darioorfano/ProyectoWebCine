@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import ar.edu.unlam.tallerweb1.modelo.Entrada;
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 import ar.edu.unlam.tallerweb1.servicios.ServicioLogin;
 
@@ -140,7 +141,7 @@ public class ControladorPaginas {
 			@ModelAttribute("usuario") Usuario usuario,
 			HttpServletRequest request
 			){
-		servicioLogin.modificarDatos(usuario);
+		servLogin.modificarDatos(usuario);
 		
 		return new ModelAndView ("redirect:/inicio");
 		
@@ -152,6 +153,16 @@ public class ControladorPaginas {
 			modelo.put("titulo", "Recomendaciones");
 			return new ModelAndView("recomendaciones", modelo);
 		}
-	
+	@RequestMapping(path="/compraEntrada",method=RequestMethod.POST)
+	public ModelAndView compra(
+			@ModelAttribute("usuario") Usuario usuario,
+			HttpServletRequest request
+			){
+		Entrada entrada=new Entrada();
+		servLogin.agregarCompraEntrada(usuario,entrada);
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo", "Compra");
+		return new ModelAndView("recomendaciones", modelo);
+	}
 
 }
