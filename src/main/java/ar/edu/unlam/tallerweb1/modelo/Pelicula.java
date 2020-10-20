@@ -12,7 +12,7 @@ public class Pelicula {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long codigo;
-	private String nombre;
+	private String titulo;
 	private String genero;
 	private String duracion;
 	private String resumen;
@@ -37,12 +37,12 @@ public class Pelicula {
 		this.codigo = codigo;
 	}
 	
-	public String getNombre() {
-		return nombre;
+	public String getTitulo() {
+		return titulo;
 	}
 	
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 	
 	public String getGenero() {

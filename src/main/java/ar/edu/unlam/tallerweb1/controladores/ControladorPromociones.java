@@ -3,11 +3,13 @@ package ar.edu.unlam.tallerweb1.controladores;
 import java.util.Map;
 
 import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -68,16 +70,18 @@ public class ControladorPromociones {
 		return new ModelAndView("promocionSeis",modelo );
 	}
 	
-	@RequestMapping("/confirmacionNewsletter")
+	@RequestMapping(path="/confirmacionNewsletter",method = RequestMethod.POST)
 	public ModelAndView confirmacionNewsletter(
-			@RequestParam(value = "email",required = false) String email
+			@ModelAttribute("newsletter") Newsletter newsletter,HttpServletRequest request
 			){
-		Newsletter newsletter = new Newsletter();
-		newsletter.setEmail(email);
-		servicioNewsletter.guardarEmail(newsletter);
+		Newsletter newsletterBuscado = servicioNewsletter.consultarEmail(newsletter);
 		ModelMap modelo = new ModelMap();
-		modelo.put("titulo","Newsletter");
-		modelo.put("email",email);
+		if(newsletterBuscado!=null){
+			newsletterBuscado.setEmail(newsletter.getEmail());
+			servicioNewsletter.guardarEmail(newsletter);
+		}else {
+			modelo.put("error","Ya se encuentra registrado en nuestro newsletter");
+		}
 		return new ModelAndView("confirmacionNewsletter",modelo);
 	}
 	

@@ -21,4 +21,10 @@ public class ServicioNewsletterImpl implements ServicioNewsletter {
 		repositorioNewsletter.guardarEmail(newsletter);
 	}
 
+
+	@Override
+	public Newsletter consultarEmail(Newsletter newsletter) {
+		return repositorioNewsletter.consultarNewsletter(newsletter);
+	}
+
 }
