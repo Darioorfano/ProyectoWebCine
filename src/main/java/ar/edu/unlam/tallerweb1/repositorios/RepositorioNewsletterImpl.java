@@ -17,8 +17,14 @@ public class RepositorioNewsletterImpl implements RepositorioNewsletter {
 	private SessionFactory sessionFactory;
 	
 	@Override
-	public void guardarEmail(Newsletter newsletter) {
-		sessionFactory.getCurrentSession().save(newsletter);
+	public Boolean guardarEmail(Newsletter newsletter) {
+		try {
+			sessionFactory.getCurrentSession().save(newsletter);
+			return true;
+		}catch (Exception e) {
+			return false;
+		}
+		
 	}
 
 	@Override

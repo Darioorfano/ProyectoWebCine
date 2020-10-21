@@ -23,8 +23,10 @@ public class ControladorPromociones {
 	
 	@RequestMapping("/promociones")
 	public ModelAndView promociones(){
+		Newsletter newsletter = new Newsletter();
 		ModelMap modelo = new ModelMap();
 		modelo.put("titulo","Promociones");
+		modelo.put("newsletter", newsletter);
 		return new ModelAndView("promociones",modelo);
 	}
 	
@@ -72,17 +74,17 @@ public class ControladorPromociones {
 	
 	@RequestMapping(path="/confirmacionNewsletter",method = RequestMethod.POST)
 	public ModelAndView confirmacionNewsletter(
-			@ModelAttribute("newsletter") Newsletter newsletter,HttpServletRequest request
+			@ModelAttribute("newsletter") Newsletter newsletter, HttpServletRequest request
 			){
-		Newsletter newsletterBuscado = servicioNewsletter.consultarEmail(newsletter);
+		Boolean newsletterBuscado = servicioNewsletter.guardarEmail(newsletter);
 		ModelMap modelo = new ModelMap();
-		if(newsletterBuscado!=null){
-			newsletterBuscado.setEmail(newsletter.getEmail());
-			servicioNewsletter.guardarEmail(newsletter);
+		modelo.put("titulo","Confirmacion");
+		if(newsletterBuscado){
+			return new ModelAndView("redirect:/promociones");
 		}else {
 			modelo.put("error","Ya se encuentra registrado en nuestro newsletter");
 		}
-		return new ModelAndView("confirmacionNewsletter",modelo);
+		return new ModelAndView("promociones",modelo);
 	}
 	
 	@RequestMapping("/promoTarjetaVisa")

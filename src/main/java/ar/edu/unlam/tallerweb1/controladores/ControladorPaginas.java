@@ -58,9 +58,7 @@ public class ControladorPaginas {
 			return new ModelAndView("redirect:/miCuenta");
 		} else {
 			// si el usuario no existe agrega un mensaje de error en el modelo.
-			
 			modelo.put("error", "Usuario o clave incorrecta");
-		
 		}
 		return new ModelAndView("login", modelo);
 	}
