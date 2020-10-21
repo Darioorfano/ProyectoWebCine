@@ -7,7 +7,7 @@ public interface ServicioLogin {
 	
 	Usuario consultarUsuarioPorNombreYApellido(String nombre, String apellido);
 	
-	void modificarDatos(Usuario usuario);
+	Boolean modificarDatos(Usuario usuario);
 
 	Boolean registrarUsuario(Usuario usuario);
 	

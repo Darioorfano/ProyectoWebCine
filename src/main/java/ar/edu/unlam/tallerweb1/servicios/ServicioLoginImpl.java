@@ -43,8 +43,8 @@ public class ServicioLoginImpl implements ServicioLogin {
 	}
 
 	@Override
-	public void modificarDatos(Usuario usuario) {
-		repositorioLogin.modificarDatos(usuario);
+	public Boolean modificarDatos(Usuario usuario) {
+		return repositorioLogin.modificarDatos(usuario);
 	}
 
 	@Override

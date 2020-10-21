@@ -141,14 +141,18 @@ public class ControladorPaginas {
 			@ModelAttribute("usuario") Usuario usuario,
 			HttpServletRequest request
 			){
-		String rol = (String) request.getSession().getAttribute("ROL");
-		String nombre = (String) request.getSession().getAttribute("nombre");
-		servLogin.modificarDatos(usuario);
+		Boolean usuarioModificado=servLogin.modificarDatos(usuario);
 		ModelMap modelo = new ModelMap();
+		if(usuarioModificado) {
+			return new ModelAndView ("redirect:/miCuenta");
+		}else {
+			modelo.put("error", "No se pudo modificar los datos");
+		}
+	/*	
 		modelo.put("usuario", usuario);
-		modelo.put("nombre", nombre);
+		*/
 		
-		return new ModelAndView ("redirect:/inicio",modelo);
+		return new ModelAndView ("modificardatos");
 		
 	}
 	

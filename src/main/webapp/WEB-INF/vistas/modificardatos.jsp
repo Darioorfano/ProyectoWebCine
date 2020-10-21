@@ -27,7 +27,11 @@
                   </div>
                     <button type="submit" class="btn btn-primary" id="boton-guardar">Guardar</button>
 
-
+					<c:if test="${not empty error}">
+						<h4><span>${error}</span></h4>
+							<br>
+							</c:if>
+							
                 </form:form>
             </article>
         </section>

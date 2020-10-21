@@ -50,8 +50,14 @@ public class RepositorioUsuarioImpl implements RepositorioUsuario {
 
 
 	@Override
-	public void modificarDatos(Usuario usuario) {
-	sessionFactory.getCurrentSession().update(usuario);
+	public Boolean modificarDatos(Usuario usuario) {
+		try {
+			sessionFactory.getCurrentSession().update(usuario);
+			return true;
+		}
+		catch(Exception e) {
+			return false;
+		}
 		
 	}
 
