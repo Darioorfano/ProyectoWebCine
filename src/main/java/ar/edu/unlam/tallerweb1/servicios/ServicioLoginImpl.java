@@ -5,6 +5,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
+import ar.edu.unlam.tallerweb1.modelo.Entrada;
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 import ar.edu.unlam.tallerweb1.repositorios.RepositorioUsuario;
 
@@ -44,6 +45,12 @@ public class ServicioLoginImpl implements ServicioLogin {
 	@Override
 	public void modificarDatos(Usuario usuario) {
 		repositorioLogin.modificarDatos(usuario);
+	}
+
+	@Override
+	public void agregarCompraEntrada(Usuario usuario) {
+		
+		
 	}
 
 }
