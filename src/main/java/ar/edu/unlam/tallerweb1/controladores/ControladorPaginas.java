@@ -140,7 +140,7 @@ public class ControladorPaginas {
 			@ModelAttribute("usuario") Usuario usuario,
 			HttpServletRequest request
 			){
-		servicioLogin.modificarDatos(usuario);
+		servLogin.modificarDatos(usuario);
 		
 		return new ModelAndView ("redirect:/inicio");
 		
