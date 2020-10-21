@@ -141,9 +141,14 @@ public class ControladorPaginas {
 			@ModelAttribute("usuario") Usuario usuario,
 			HttpServletRequest request
 			){
+		String rol = (String) request.getSession().getAttribute("ROL");
+		String nombre = (String) request.getSession().getAttribute("nombre");
 		servLogin.modificarDatos(usuario);
+		ModelMap modelo = new ModelMap();
+		modelo.put("usuario", usuario);
+		modelo.put("nombre", nombre);
 		
-		return new ModelAndView ("redirect:/inicio");
+		return new ModelAndView ("redirect:/inicio",modelo);
 		
 	}
 	
@@ -153,6 +158,7 @@ public class ControladorPaginas {
 			modelo.put("titulo", "Recomendaciones");
 			return new ModelAndView("recomendaciones", modelo);
 		}
+	
 	@RequestMapping(path="/compraEntrada",method=RequestMethod.POST)
 	public ModelAndView compra(
 			@ModelAttribute("usuario") Usuario usuario,
@@ -164,5 +170,11 @@ public class ControladorPaginas {
 		modelo.put("titulo", "Compra");
 		return new ModelAndView("recomendaciones", modelo);
 	}
-
+	
+	@RequestMapping(path="/completarCompra",method=RequestMethod.POST)
+	public ModelAndView completarCompra() {
+		ModelMap modelo = new ModelMap();
+		
+		return new ModelAndView("");
+	}
 }

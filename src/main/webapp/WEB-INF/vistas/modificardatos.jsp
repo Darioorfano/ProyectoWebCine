@@ -1,3 +1,5 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="header.jsp" %>
 <body>
 	<main>
@@ -6,27 +8,27 @@
                 <div class="container">
                   <h2>Modificar datos</h2>
                 </div>  
-                <form action="validarModificarDatos" method="POST" modelAttribute="usuario" >
+                <form:form action="validarModificarDatos" method="POST" modelAttribute="usuario" >
                   <div class="form-group">
                     <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre" id="nombre" class="form-control">
+                    <form:input type="text" path="nombre" id="nombre" class="form-control"/>
                   </div>
                   <div class="form-group">
                     <label for="apellido">Apellido: </label>
-                   <input type="text" name="apellido" id="apellido" class="form-control">
+                   <form:input type="text" path="apellido" id="apellido" class="form-control"/>
                   </div>
                   <div class="form-group">
                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" class="form-control">
+                    <form:input type="email" path="email" id="email" class="form-control"/>
                   </div>
                   <div class="form-group">
                     <label for="contraseña">Contraseña: </label>
-                    <input type="password" name="contraseña" id="contraseña" class="form-control">
+                    <form:input type="password" path="contraseña" id="contraseña" class="form-control"/>
                   </div>
                     <button type="submit" class="btn btn-primary" id="boton-guardar">Guardar</button>
 
 
-                </form>
+                </form:form>
             </article>
         </section>
 	</main>

@@ -48,8 +48,8 @@ public class ServicioLoginImpl implements ServicioLogin {
 	}
 
 	@Override
-	public void agregarCompraEntrada(Usuario usuario) {
-		
+	public void agregarCompraEntrada(Usuario usuario, Entrada entrada) {
+	
 		
 	}
 
