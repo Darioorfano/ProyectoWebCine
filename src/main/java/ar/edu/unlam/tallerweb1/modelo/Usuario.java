@@ -32,15 +32,7 @@ public class Usuario {
 
 	private String rol;
 	
-	private List<Entrada>entradas=new ArrayList<>();
 	
-	
-	public List<Entrada> getEntradas() {
-		return entradas;
-	}
-	public void setEntradas(List<Entrada> entradas) {
-		this.entradas = entradas;
-	}
 	public Long getId() {
 		return id;
 	}

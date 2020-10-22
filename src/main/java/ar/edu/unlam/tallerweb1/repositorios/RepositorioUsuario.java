@@ -12,7 +12,7 @@ public interface RepositorioUsuario {
 	Usuario consultarUsuarioPorNombreYApellido(String nombre, String apellido);
 
 
-	void modificarDatos(Usuario usuario);
+	Boolean modificarDatos(Usuario usuario);
  
 	
 

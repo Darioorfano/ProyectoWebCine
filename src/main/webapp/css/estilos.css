@@ -734,3 +734,8 @@ del header queden bien posicionados*/
     margin-top: 120px;
     padding: 10px;
 }
+
+/*COMPLETAR COMPRA*/
+.formulario-compra{
+    width: 55%;
+}
