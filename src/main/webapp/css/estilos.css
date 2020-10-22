@@ -913,3 +913,106 @@ del header queden bien posicionados*/
     width: 55%;
 }
 
+
+/* CARRITO */
+
+.miCompra{
+    display: flex;
+    padding-left: 40px;
+    padding-top: 40px;
+    color: #464d61;
+}
+
+.miCompra h6{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.linea1{
+    width: 1100px;
+    margin-left: 40px;
+}
+
+.tablaProductos{
+    display: flex;
+    margin-left: 40px;
+}
+
+
+.productos h5{
+    font-weight: bold;
+}
+
+.productos p{
+    margin-top: 20px;
+}
+
+.precio{
+    margin-left: 680px;
+}
+
+.precio h5{
+    font-weight: bold;
+}
+
+.precio p{
+margin-top: 20px;
+}
+
+.cantidad{
+    margin-left: 40px;
+}
+
+.cantidad p{
+    margin-top: 20px;
+
+}
+
+.cantidad h5{
+    font-weight: bold;
+}
+
+.botones1{
+    display: flex;
+    margin-left: 760px;
+}
+
+.botones1 h6{
+    background-color: #464d61;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.subtotal{
+    display: flex;
+    margin-left: 805px;
+}
+
+.subtotal p{
+    margin-left: 130px;
+}
+
+.linea2{
+    margin-top: -2px;
+    margin-left: 800px;
+    width: 340px;
+}
+
+.botones2{
+    display: flex;
+    margin-left: 950px;
+}
+
+.botones2 h6{
+    background-color: #464d61;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+

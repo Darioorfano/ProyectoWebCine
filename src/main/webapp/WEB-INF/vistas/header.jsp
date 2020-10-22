@@ -44,6 +44,7 @@
                  
                <div class="col-iconos">
       <i class="fas fa-search"></i>
+       <a href="carrito"><i class="fas fa-shopping-cart"></i> </a> 
       <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
       <a href="https://www.whatsapp.com/?lang=es"><i class="fab fa-whatsapp"></i></a>
      <a href="https://www.instagram.com/ "><i class="fab fa-instagram"></i></a>
