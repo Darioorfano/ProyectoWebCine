@@ -14,7 +14,7 @@
                     <form:input type="text" path="nombre" id="nombre" class="form-control"/>
                   </div>
                   <div class="form-group">
-                    <label for="apellido">Apellido: </label>
+                    <label for="apellido"> Apellido: </label>
                    <form:input type="text" path="apellido" id="apellido" class="form-control"/>
                   </div>
                   <div class="form-group">

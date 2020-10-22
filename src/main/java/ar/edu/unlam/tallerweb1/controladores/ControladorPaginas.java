@@ -149,7 +149,7 @@ public class ControladorPaginas {
 		}
 
 		
-		return new ModelAndView ("modificardatos");
+		return new ModelAndView ("");
 		
 	}
 	
