@@ -168,22 +168,12 @@ public class ControladorPaginas {
 		return new ModelAndView("compra", modelo);
 	}
 	
-	@RequestMapping(path="/compraEntrada",method=RequestMethod.POST)
-	public ModelAndView compra(
-			@ModelAttribute("usuario") Usuario usuario,
-			HttpServletRequest request
-			){
-		Entrada entrada=new Entrada();
-		servLogin.agregarCompraEntrada(usuario,entrada);
-		ModelMap modelo = new ModelMap();
-		modelo.put("titulo", "Compra");
-		return new ModelAndView("recomendaciones", modelo);
-	}
 	
-	@RequestMapping(path="/completarCompra",method=RequestMethod.POST)
+	
+	@RequestMapping("/completarCompra")
 	public ModelAndView completarCompra() {
 		ModelMap modelo = new ModelMap();
 		
-		return new ModelAndView("");
+		return new ModelAndView("completarcompra",modelo);
 	}
 }

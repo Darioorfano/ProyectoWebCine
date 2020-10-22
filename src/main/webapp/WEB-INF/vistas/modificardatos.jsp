@@ -1,7 +1,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="header.jsp" %>
-<body>
+
 	<main>
 		<section>
             <article class="container"> 
@@ -12,6 +12,7 @@
                   <div class="form-group">
                     <label for="nombre">Nombre: </label>
                     <form:input type="text" path="nombre" id="nombre" class="form-control"/>
+                    
                   </div>
                   <div class="form-group">
                     <label for="apellido">Apellido: </label>
@@ -36,5 +37,5 @@
             </article>
         </section>
 	</main>
-</body>
+
 <%@ include file="footer.jsp" %>

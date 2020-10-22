@@ -13,6 +13,5 @@ public interface ServicioLogin {
 	
 	Usuario consultarUsuario(Usuario usuario);
 
-	void agregarCompraEntrada(Usuario usuario, Entrada entrada);
-
+	
 }

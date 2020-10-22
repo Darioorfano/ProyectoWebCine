@@ -47,10 +47,6 @@ public class ServicioLoginImpl implements ServicioLogin {
 		return repositorioLogin.modificarDatos(usuario);
 	}
 
-	@Override
-	public void agregarCompraEntrada(Usuario usuario, Entrada entrada) {
 	
-		
-	}
 
 }
