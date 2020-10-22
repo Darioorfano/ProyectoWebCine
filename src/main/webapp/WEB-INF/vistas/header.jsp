@@ -43,6 +43,7 @@
                 </div>
                  
                <div class="col-iconos">
+       <a href="carrito"><i class="fas fa-shopping-cart"></i> </a>        
       <i class="fas fa-search"></i>
       <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
       <a href="https://www.whatsapp.com/?lang=es"><i class="fab fa-whatsapp"></i></a>
@@ -54,7 +55,7 @@
         
             <nav class="navegacion-superior">
                 <ul>
-
+				
                 <li><a href="inicio">Inicio</a></li>
                 <li><a href="cartelera">Cartelera</a></li>
                 <li><a href="recomendaciones">Recomendaciones</a></li>

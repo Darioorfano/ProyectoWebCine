@@ -1,11 +1,15 @@
 package ar.edu.unlam.tallerweb1.modelo;
 
 import java.util.Calendar;
+import java.util.LinkedList;
+import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Cartelera {
@@ -16,6 +20,7 @@ public class Cartelera {
 	private Long id;
 	private Double horario;
 	private String fecha;
+		
 	
 	public Long getId() {
 		return id;

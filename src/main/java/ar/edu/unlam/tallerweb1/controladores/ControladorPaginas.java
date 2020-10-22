@@ -151,5 +151,12 @@ public class ControladorPaginas {
 			return new ModelAndView("recomendaciones", modelo);
 		}
 	
+	
+	@RequestMapping("/carrito")
+		public ModelAndView carrito() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo", "Carrito");
+		return new ModelAndView("carrito", modelo);
+	}
 
 }
