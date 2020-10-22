@@ -136,7 +136,7 @@
                 <button class="btn  btn-primary" Type="Submit"/>Suscribirse</button>
             </form:form>
             <c:if test="${not empty error}">
-            	<h5><span>${error}</span></h5>
+            	<h5 class="text-danger"><span>${error}</span></h5>
             </c:if>
         </section>
   	</main>

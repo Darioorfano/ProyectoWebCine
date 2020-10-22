@@ -20,12 +20,8 @@
                 <a href="#" class="btn btn-primary btn-lg">Agregar al Carrito</a>
             </div>
         </section>
-
-        <!--Susbripcion a Newsletter-->
-        <%@ include file="newsletter.jsp" %>
     </main>
-	
-	
+		
 <%@ include file="footer.jsp" %>	
 </body>
 </html>
