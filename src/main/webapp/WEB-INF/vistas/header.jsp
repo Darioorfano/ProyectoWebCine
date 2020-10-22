@@ -72,10 +72,14 @@
 
         <nav id="navegacion-responsive" class="navegacion">
           <ul>
-            <li><a href="">Peliculas</a></li>
-            <li><a href="">Recomendaciones</a></li>
-            <li><a href="">Promociones</a></li>
-            <li><a href="">Mi cuenta</a></li>
+
+         
+         	<li><a href="inicio">Inicio</a></li>
+            <li><a href="cartelera">Cartelera</a></li>
+            <li><a href="recomendaciones">Recomendaciones</a></li>
+            <li><a href="promociones">Promociones</a></li>
+            <li><a href="miCuenta">Mi cuenta</a></li>
+
           </ul>
         </nav>
       

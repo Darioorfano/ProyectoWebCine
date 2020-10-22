@@ -17,8 +17,18 @@ public class ServicioNewsletterImpl implements ServicioNewsletter {
 	
 	
 	@Override
-	public void guardarEmail(Newsletter newsletter) {
-		repositorioNewsletter.guardarEmail(newsletter);
+	public Boolean guardarEmail(Newsletter newsletter) {
+		if(repositorioNewsletter.consultarNewsletter(newsletter)==null) {
+			return repositorioNewsletter.guardarEmail(newsletter);
+		}else {
+			return false;
+		}
+	}
+
+
+	@Override
+	public Newsletter consultarEmail(Newsletter newsletter) {
+		return repositorioNewsletter.consultarNewsletter(newsletter);
 	}
 
 }

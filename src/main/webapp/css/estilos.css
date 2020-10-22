@@ -735,6 +735,7 @@ del header queden bien posicionados*/
     padding: 10px;
 }
 
+
 #flex{
     display: flex;
 }
@@ -906,3 +907,9 @@ del header queden bien posicionados*/
     color: #fff;
     padding: 10px;
 }
+
+/*COMPLETAR COMPRA*/
+.formulario-compra{
+    width: 55%;
+}
+
