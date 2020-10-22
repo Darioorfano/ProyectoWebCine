@@ -13,14 +13,22 @@ public class Pelicula {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long codigo;
-	private String nombre;
+	private String titulo;
 	private String genero;
 	private String duracion;
-	private String resumen;
-	private String tipo;
+	private String sinopsis;
+	private String edadMaxima;
 	
 	@ManyToOne
 	private Cartelera cartelera;
+	
+	public String getEdadMaxima() {
+		return edadMaxima;
+	}
+
+	public void setEdadMaxima(String edadMaxima) {
+		this.edadMaxima = edadMaxima;
+	}
 	
 	public Cartelera getCartelera() {
 		return cartelera;
@@ -38,12 +46,12 @@ public class Pelicula {
 		this.codigo = codigo;
 	}
 	
-	public String getNombre() {
-		return nombre;
+	public String getTitulo() {
+		return titulo;
 	}
 	
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 	
 	public String getGenero() {
@@ -62,20 +70,12 @@ public class Pelicula {
 		this.duracion = duracion;
 	}
 	
-	public String getResumen() {
-		return resumen;
+	public String getSinopsis() {
+		return sinopsis;
 	}
 	
-	public void setResumen(String resumen) {
-		this.resumen = resumen;
+	public void setSinopsis(String sinopsis) {
+		this.sinopsis = sinopsis;
 	}
 	
-	public String getTipo() {
-		return tipo;
-	}
-	
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-
 }

@@ -1,5 +1,8 @@
 package ar.edu.unlam.tallerweb1.repositorios;
 
-public interface RepositorioSucursal {
+import ar.edu.unlam.tallerweb1.modelo.Sucursal;
 
+public interface RepositorioSucursal {
+	void guardarSucursal(Sucursal sucursal);
+	Sucursal consultarSucursalPorId(Long id);
 }

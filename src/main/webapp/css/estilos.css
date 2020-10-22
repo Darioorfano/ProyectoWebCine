@@ -735,6 +735,7 @@ del header queden bien posicionados*/
     padding: 10px;
 }
 
+
 #flex{
     display: flex;
 }
@@ -907,6 +908,15 @@ del header queden bien posicionados*/
     padding: 10px;
 }
 
+
+/*COMPLETAR COMPRA*/
+.formulario-compra{
+    width: 55%;
+}
+
+
+/* CARRITO */
+
 .miCompra{
     display: flex;
     padding-left: 40px;
@@ -1006,3 +1016,4 @@ margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
+

@@ -3,11 +3,13 @@ package ar.edu.unlam.tallerweb1.controladores;
 import java.util.Map;
 
 import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -21,8 +23,10 @@ public class ControladorPromociones {
 	
 	@RequestMapping("/promociones")
 	public ModelAndView promociones(){
+		Newsletter newsletter = new Newsletter();
 		ModelMap modelo = new ModelMap();
 		modelo.put("titulo","Promociones");
+		modelo.put("newsletter", newsletter);
 		return new ModelAndView("promociones",modelo);
 	}
 	
@@ -68,17 +72,19 @@ public class ControladorPromociones {
 		return new ModelAndView("promocionSeis",modelo );
 	}
 	
-	@RequestMapping("/confirmacionNewsletter")
+	@RequestMapping(path="/confirmacionNewsletter",method = RequestMethod.POST)
 	public ModelAndView confirmacionNewsletter(
-			@RequestParam(value = "email",required = false) String email
+			@ModelAttribute("newsletter") Newsletter newsletter, HttpServletRequest request
 			){
-		Newsletter newsletter = new Newsletter();
-		newsletter.setEmail(email);
-		servicioNewsletter.guardarEmail(newsletter);
+		Boolean newsletterBuscado = servicioNewsletter.guardarEmail(newsletter);
 		ModelMap modelo = new ModelMap();
-		modelo.put("titulo","Newsletter");
-		modelo.put("email",email);
-		return new ModelAndView("confirmacionNewsletter",modelo);
+		modelo.put("titulo","Confirmacion");
+		if(newsletterBuscado){
+			return new ModelAndView("redirect:/promociones");
+		}else {
+			modelo.put("error","Ya se encuentra registrado en nuestro newsletter");
+		}
+		return new ModelAndView("promociones",modelo);
 	}
 	
 	@RequestMapping("/promoTarjetaVisa")

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import ar.edu.unlam.tallerweb1.modelo.Entrada;
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 import ar.edu.unlam.tallerweb1.servicios.ServicioLogin;
 
@@ -56,9 +57,7 @@ public class ControladorPaginas {
 			return new ModelAndView("redirect:/miCuenta");
 		} else {
 			// si el usuario no existe agrega un mensaje de error en el modelo.
-			
 			modelo.put("error", "Usuario o clave incorrecta");
-		
 		}
 		return new ModelAndView("login", modelo);
 	}
@@ -138,9 +137,19 @@ public class ControladorPaginas {
 			@ModelAttribute("usuario") Usuario usuario,
 			HttpServletRequest request
 			){
+
 		servLogin.modificarDatos(usuario);
+
+		Boolean usuarioModificado=servLogin.modificarDatos(usuario);
+		ModelMap modelo = new ModelMap();
+		if(usuarioModificado) {
+			return new ModelAndView ("redirect:/miCuenta");
+		}else {
+			modelo.put("error", "No se pudo modificar los datos");
+		}
+
 		
-		return new ModelAndView ("redirect:/inicio");
+		return new ModelAndView ("modificardatos");
 		
 	}
 	
@@ -151,12 +160,39 @@ public class ControladorPaginas {
 			return new ModelAndView("recomendaciones", modelo);
 		}
 	
-	
+
 	@RequestMapping("/carrito")
 		public ModelAndView carrito() {
 		ModelMap modelo = new ModelMap();
 		modelo.put("titulo", "Carrito");
 		return new ModelAndView("carrito", modelo);
+	}
+
+
+	@RequestMapping("/compra")
+	public ModelAndView compra() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo", "Compra");
+		return new ModelAndView("compra", modelo);
+	}
+	
+	@RequestMapping(path="/compraEntrada",method=RequestMethod.POST)
+	public ModelAndView compra(
+			@ModelAttribute("usuario") Usuario usuario,
+			HttpServletRequest request
+			){
+		Entrada entrada=new Entrada();
+		servLogin.agregarCompraEntrada(usuario,entrada);
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo", "Compra");
+		return new ModelAndView("recomendaciones", modelo);
+	}
+	
+	@RequestMapping(path="/completarCompra",method=RequestMethod.POST)
+	public ModelAndView completarCompra() {
+		ModelMap modelo = new ModelMap();
+		
+		return new ModelAndView("");
 	}
 
 }

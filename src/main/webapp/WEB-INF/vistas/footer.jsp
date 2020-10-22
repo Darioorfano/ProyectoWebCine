@@ -7,7 +7,10 @@
       <section class="seccion-menu-inf">
         <nav class="nav-inferior">
             <ul>
+
                 <li><a href="peliculas">Peliculas</a></li>
+           		<li><a href="inicio">Inicio</a></li>
+                <li><a href="cartelera">Cartelera</a></li>
                 <li><a href="recomendaciones">Recomendaciones</a></li>
                 <li><a href="promociones">Promociones</a></li>
                 <li><a href="cuenta">Mi cuenta</a></li>
