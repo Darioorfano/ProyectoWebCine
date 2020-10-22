@@ -163,6 +163,13 @@ public class ControladorPaginas {
 			return new ModelAndView("recomendaciones", modelo);
 		}
 	
+	@RequestMapping("/compra")
+	public ModelAndView compra() {
+		ModelMap modelo = new ModelMap();
+		modelo.put("titulo", "Compra");
+		return new ModelAndView("compra", modelo);
+	}
+	
 	@RequestMapping(path="/compraEntrada",method=RequestMethod.POST)
 	public ModelAndView compra(
 			@ModelAttribute("usuario") Usuario usuario,
