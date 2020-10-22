@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/estilos.css">
-	<link rel="stylesheet" href="css/estilos-promociones.css">
 
+
+    <link rel="stylesheet" href="css/estilos-promociones.css">
 
     <!-- En la etiqueta meta que posee el content, todo el contenido largo es el Id del cliente el cual lo configuramos desde
     la consola de google -->
@@ -28,7 +29,7 @@
   	
 
 
-    
+
 
     <title>${titulo}</title>
 
@@ -43,6 +44,7 @@
                  
                <div class="col-iconos">
       <i class="fas fa-search"></i>
+       <a href="carrito"><i class="fas fa-shopping-cart"></i> </a> 
       <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
       <a href="https://www.whatsapp.com/?lang=es"><i class="fab fa-whatsapp"></i></a>
      <a href="https://www.instagram.com/ "><i class="fab fa-instagram"></i></a>
@@ -53,11 +55,13 @@
         
             <nav class="navegacion-superior">
                 <ul>
+
                 <li><a href="inicio">Inicio</a></li>
                 <li><a href="cartelera">Cartelera</a></li>
                 <li><a href="recomendaciones">Recomendaciones</a></li>
+
                 <li><a href="promociones">Promociones</a></li>
-                <li><a href="miCuenta">Mi cuenta</a></li>
+                <li><a href="miCuenta">Mi cuenta</a></li>   
                 </ul>
             </nav>
       
@@ -69,11 +73,14 @@
 
         <nav id="navegacion-responsive" class="navegacion">
           <ul>
-          	<li><a href="inicio">Inicio</a></li>
+
+         
+         	<li><a href="inicio">Inicio</a></li>
             <li><a href="cartelera">Cartelera</a></li>
             <li><a href="recomendaciones">Recomendaciones</a></li>
             <li><a href="promociones">Promociones</a></li>
             <li><a href="miCuenta">Mi cuenta</a></li>
+
           </ul>
         </nav>
       

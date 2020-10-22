@@ -16,4 +16,8 @@ hs_err_pid*
 *.iml
 
 # Ignora archivo HibernateContent.xml #
+<<<<<<< HEAD
+hibernateContent.xml
+=======
 hibernateContext.xml
+>>>>>>> master

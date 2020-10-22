@@ -85,5 +85,75 @@
         </div>
         </article>
       </section>
+      
+      <section>
+
+        <article class="contenedor-informacion-pelicula">
+          
+              <div class = "imagenTitulo">
+              <img src="img/descarga.jpg">
+              <div class = "divInformacionPelicula">
+              <h1>Pulp Fiction</h1>
+              <div>
+              <p class = "edad">+16</p>
+              <p>Castellano</p>
+              <div class = "ubicacion"> 
+              <i class="fas fa-map-marker-alt"></i>
+              <h7>Cinemark Hoyts<br>
+              Sala 7</h7>
+              </div>  
+              <p>Vergara 2822, Morón.</p>
+              <p>Lunes 19 de Octubre, 22 hs.</p>
+          
+              </div>
+
+              </div>
+              </div>
+                
+              <div class = "entradaComprar">
+              <img src="img/img_54668.png">
+              <div class= "left">
+              <h7>1 entrada</h7>
+              <p>(Entrada general)</p>
+              </div>
+
+              <h7 id= "precio">$1200</h7>
+              <img src="img/boton-agregar.png">
+              <img src="img/boton-de-resta.png">
+              </div>
+
+              <div class="total">
+                <h3>TOTAL</h3>
+                <h3>$1200</h3>
+              </div>
+            
+         
+        </article>  
+
+        <article class = "botones">
+         <h7 class= "volver">VOLVER</h7>
+         <h7 class = "siguiente">SIGUIENTE</h7> 
+        </article>
+
+      </section>
+    </div>
+    </main>
+    <footer>
+        <section class="contenedor-footer">
+
+            <section class="derechos">
+              <p><i class="far fa-copyright"></i>Todos los derechos reservados</p>
+            </section>
+            <section class="seccion-menu-inf">
+              <nav class="nav-inferior">
+                <ul>
+                  <li><a href="peliculas">Peliculas</a></li>
+                  <li><a href="recomendaciones">Recomendaciones</a></li>
+                  <li><a href="promociones">Promociones</a></li>
+                  <li><a href="cuenta">Mi cuenta</a></li>
+                </ul>
+              </nav>
+            </section>
+      
 </main>
 <%@include file ="footer.jsp" %>

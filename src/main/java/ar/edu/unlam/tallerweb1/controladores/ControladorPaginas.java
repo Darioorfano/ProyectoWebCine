@@ -1,7 +1,6 @@
 package ar.edu.unlam.tallerweb1.controladores;
 
 
-
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 
@@ -22,9 +21,9 @@ public class ControladorPaginas {
 
 	@Inject
 	private ServicioLogin servLogin;
-	
-	
 
+	
+	
 	@RequestMapping ("/inicio")
 	public ModelAndView home() {
 		ModelMap modelo = new ModelMap();
@@ -41,7 +40,6 @@ public class ControladorPaginas {
 		modelo.put("usuario",usuario);
 		
 		return new ModelAndView("login",modelo);
-
 	
 	}
 	
@@ -139,6 +137,9 @@ public class ControladorPaginas {
 			@ModelAttribute("usuario") Usuario usuario,
 			HttpServletRequest request
 			){
+
+		servLogin.modificarDatos(usuario);
+
 		Boolean usuarioModificado=servLogin.modificarDatos(usuario);
 		ModelMap modelo = new ModelMap();
 		if(usuarioModificado) {
@@ -146,11 +147,9 @@ public class ControladorPaginas {
 		}else {
 			modelo.put("error", "No se pudo modificar los datos");
 		}
-	/*	
-		modelo.put("usuario", usuario);
-		*/
+
 		
-		return new ModelAndView ("modificardatos");
+		return new ModelAndView ("");
 		
 	}
 	

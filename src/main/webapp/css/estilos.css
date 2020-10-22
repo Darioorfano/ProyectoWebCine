@@ -735,7 +735,284 @@ del header queden bien posicionados*/
     padding: 10px;
 }
 
+
+#flex{
+    display: flex;
+}
+#division{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.agrupacion-entrada{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.entradas{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-descripcion{
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo-descripcion p{
+    font-size: 12px;
+    margin-right: 1em;
+    color: #fff;
+}
+.logo{
+    margin-right: 1em;
+    width: 30%;
+    margin-bottom: 1em;
+}
+.precio-entrada{
+    width: 100%;
+    background-color: #464d61;
+}
+.precio-entrada p {
+    color: #fff;
+    margin-top: 2em;
+    text-align: center;
+}
+.precio-entrada:hover{
+    background-color:rgb(41, 41, 41);
+}
+.contenedor-entrada-general{
+    width: 42%;
+    background-color: black;
+    display: flex;
+    padding-left:1em;
+    
+}
+.contenedor-entrada-descuento{
+    width: 60%;
+    background-color:#000;
+    display: flex;
+    padding-left:1em;
+   
+    margin-right:2em;
+    margin-bottom: 2em;
+}
+.titulo-informacion-entrada p{
+    color: #fff;
+}
+
+.contenedor-informacion-pelicula{
+    border-style: solid;
+    margin-top: 120px;
+    padding: 10px;
+}
+
+.imagenTitulo{
+    display: flex;
+    
+}
+
+.imagenTitulo img{
+    width: 150px;
+}
+
+.imagenTitulo h1{
+   
+    margin-top: -8px;
+    margin-bottom: 25px;
+}
+
+.divInformacionPelicula {
+
+    margin-left: 20px;
+}
+
+.divInformacionPelicula p{
+    margin-top: -20px;
+    
+}
+
+.ubicacion{
+   display: flex;
+}
+
+.ubicacion h7{
+    margin-left: 10px;
+    margin-top: -2px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.entradaComprar{
+    margin-top: 20px;
+    display: flex;
+    border-style: groove;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.entradaComprar img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    
+}
+
+.left{
+    margin-left: 20px;
+}
+
+.left h7{
+    font-weight: bold;
+    
+}
+
+.left p{
+    margin-top: -5px;
+}
+
+#precio{
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+.total{
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    font-weight: bold;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.volver{
+    background-color: #464d61;
+    color: #fff;
+    padding: 10px;
+}
+
+.siguiente{
+    background-color:#000;
+    color: #fff;
+    padding: 10px;
+}
+
 /*COMPLETAR COMPRA*/
 .formulario-compra{
     width: 55%;
 }
+
+
+/* CARRITO */
+
+.miCompra{
+    display: flex;
+    padding-left: 40px;
+    padding-top: 40px;
+    color: #464d61;
+}
+
+.miCompra h6{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.linea1{
+    width: 1100px;
+    margin-left: 40px;
+}
+
+.tablaProductos{
+    display: flex;
+    margin-left: 40px;
+}
+
+
+.productos h5{
+    font-weight: bold;
+}
+
+.productos p{
+    margin-top: 20px;
+}
+
+.precio{
+    margin-left: 680px;
+}
+
+.precio h5{
+    font-weight: bold;
+}
+
+.precio p{
+margin-top: 20px;
+}
+
+.cantidad{
+    margin-left: 40px;
+}
+
+.cantidad p{
+    margin-top: 20px;
+
+}
+
+.cantidad h5{
+    font-weight: bold;
+}
+
+.botones1{
+    display: flex;
+    margin-left: 760px;
+}
+
+.botones1 h6{
+    background-color: #464d61;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.subtotal{
+    display: flex;
+    margin-left: 805px;
+}
+
+.subtotal p{
+    margin-left: 130px;
+}
+
+.linea2{
+    margin-top: -2px;
+    margin-left: 800px;
+    width: 340px;
+}
+
+.botones2{
+    display: flex;
+    margin-left: 950px;
+}
+
+.botones2 h6{
+    background-color: #464d61;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+

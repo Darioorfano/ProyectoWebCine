@@ -18,5 +18,5 @@ public interface RepositorioUsuario {
 
 	Usuario consultarUsuario(Usuario usuario);
 
-	
+
 }
